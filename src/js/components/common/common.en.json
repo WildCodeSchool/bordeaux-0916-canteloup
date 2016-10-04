@@ -15,5 +15,11 @@
   "COMMON_PASSWORD": "Password",
   "COMMON_EMAIL": "Email",
   "COMMON_FIRSTNAME": "Firstname",
-  "COMMON_LASTNAME": "Lastname"
+  "COMMON_LASTNAME": "Lastname",
+  "COMMON_HISTORY": "History",
+  "COMMON_PRICES": "Membership pricing",
+  "COMMON_CO-WORKERS": "Co-Workers",
+  "COMMON_EVENTS": "Events",
+  "COMMON_CONTACT": "Contact"
+
 }
