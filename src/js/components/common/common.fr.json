@@ -15,5 +15,10 @@
   "COMMON_PASSWORD": "Mot de passe",
   "COMMON_EMAIL": "Email",
   "COMMON_FIRSTNAME": "Prénom",
-  "COMMON_LASTNAME": "Nom"
+  "COMMON_LASTNAME": "Nom",
+  "COMMON_HISTORY": "Histoire",
+  "COMMON_PRICES": "Tarifs",
+  "COMMON_CO-WORKERS": "Co-Workers",
+  "COMMON_EVENTS": "Evenements",
+  "COMMON_CONTACT": "Contact"  
 }

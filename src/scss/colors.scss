@@ -1,8 +1,9 @@
 /* base colors */
-$background: #F5F5F5;
+$background: #000000;
 $text-default: #727272;
 $text-edit: #faebd7;
 $white: #FFF;
+$black: #000000;
 $gray: #efefef;
 $orange: #ffc107;
 $orange-dark: #c59400;
@@ -15,3 +16,4 @@ $primary: #00b5ad;
 $primary-dark: #009c95;
 $secondary: $orange;
 $secondary-dark: $orange-dark;
+$transparent: rgba(255,255,255,0.3);

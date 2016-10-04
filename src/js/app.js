@@ -56,5 +56,9 @@
     'app.services',
     'app.common',
     'app.home',
-    'app.about'
+    'app.about',
+    'app.tarifs',
+    'app.coworkers',
+    'app.contact',
+    'app.events'
 ]))
