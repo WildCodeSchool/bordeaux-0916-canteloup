@@ -2,11 +2,11 @@
 
 /* intro */
 
-.intro {
-    
+.headers {
+    background-image: url('../img/openspace.jpg');
     background-position: bottom;
     background-size: cover;
-    min-height: 900px;
+    min-height: 500px;
     margin-bottom: 10px;
 }
 .intro-title {
@@ -14,7 +14,30 @@
     margin-top: 50px;
     color:$black;
     text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
+    margin-bottom: 80px;
 }
 .subtitle{
-  color:$secondary;
+  color:$primary;
+}
+
+
+/* plan */
+
+.space-plan{
+  margin-top : 5%;
+  margin-bottom : 5%;
+}
+
+/* screen*/
+
+@media (max-width: 600px){
+  .container-fluid{
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+  }
+  .pull-left{
+    display : none;
+  }
 }

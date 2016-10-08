@@ -1,0 +1,75 @@
+@import 'colors';
+
+/* height element*/
+
+.large {
+  height: 300px;
+}
+
+.medium {
+  height : 150px;
+}
+
+.mini{
+  height: 150px;
+}
+
+img, .local {
+  height: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* design element*/
+
+.office {
+  border: solid $dark-gray 2px;
+  border-bottom: none;
+
+  background-color: $gray;
+}
+
+
+.open-space{
+  background-color : $gray;
+}
+
+.hall{
+  background-color : $gray;
+}
+
+.kitchen{
+  background-color : $gray;
+  border : solid $dark-gray 2px;
+  border-bottom: none;
+}
+
+.babyfoot{
+  background-color: $gray;
+  border : solid $dark-gray 2px;
+  border-top : none;
+}
+
+.meeting-room{
+  background-color : $gray;
+  border: solid $dark-gray 2px;
+  border-bottom: none;
+  border-left : none;
+}
+
+.bordure-top{
+  border-top : none;
+}
+
+.bordure-bottom{
+  border-bottom: dashed $dark-gray 2px;
+
+}
+
+/* au survol */
+
+.local:hover{
+  background-color: $primary;
+  border-radius: 25px;
+}
