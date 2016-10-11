@@ -1,0 +1,44 @@
+@import 'colors';
+
+/* price*/
+
+.pricesPropositions{
+  background-color: $dark-gray;
+  padding-top : 5%;
+  padding-bottom: 5%;
+}
+
+.title{
+  background-color: $gray;
+  border-radius : 50px 50px 0 0 ;
+  padding : 0px 40px 0px 40px;
+  margin-bottom : 0px;
+}
+
+.title h3 {
+  color: $dark-gray;
+  margin : 0px 40px 0px 40px;
+}
+
+.formule, .price{
+  padding : 0px 40px 0px 40px;
+}
+.formule{
+  border-radius: 0 0 50px 50px;
+  margin-bottom : 15px;
+}
+
+/* survol des offres */
+
+.price:hover {
+  font-size: 1.5em;
+  padding:0;
+}
+
+.price:hover .title h3{
+  font-size: 1.8em;
+}
+
+.price:hover .title {
+  background-color: $primary;
+}
