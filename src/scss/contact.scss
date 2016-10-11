@@ -1,24 +1,47 @@
 @import 'colors';
-
 /* form */
-.form1{
-  margin-top: 6.250rem;
+.ctab{
+ margin-top: 50px;
+ .ctab:focus{
+ border-radius: 10px;
+ }
 }
 
-.textarea{
-  margin-top: 0.625rem;
-  margin-bottom: 1rem;
+
+
+.form1 {
+    margin-top: 6.250rem;
+
+    .textarea {
+        margin-top: 0.625rem;
+        margin-bottom: 1rem;
+  }
 }
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+
 
 /* submit button */
-.btn, .btn:focus {
+.btn,
+.btn:focus {
     background-color: #00b5ad;
     color: #FFF;
     text-shadow: none;
     background-image: none;
     border: none;
-}
+  }
+    button[disabled="disabled"]{
+      opacity: 0.4;
+      cursor: not-allowed !important;
+    }
+
+
 /* map */
 .map {
-    padding: 3.125rem 0 9.375rem 0;
+    padding: 3.125rem 0 9.375rem;
 }
+
+#map { height: 500px; }

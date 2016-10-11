@@ -9,7 +9,6 @@ exports.config = {
             joinTo: {
                 'js/vendor.min.js': [
                     'bower_components/jquery/dist/jquery.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/toastr/toastr.js',
                     'bower_components/rangy/*.js',
                     'bower_components/angular/angular.js',
@@ -22,7 +21,9 @@ exports.config = {
                     'bower_components/textAngular/dist/textAngularSetup.js',
                     'bower_components/textAngular/dist/textAngular.js',
                     'bower_components/angular-translate/angular-translate.js',
-                    'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js'
+                    'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+                    'bower_components/angular-animate/angular-animate.js',
+                    'bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
                 ],
                 'js/app.min.js': /^src\/js/
             },
@@ -70,7 +71,7 @@ exports.config = {
             ]
         },
         copycat: {
-            "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/bootstrap/dist/css/bootstrap.min.css.map", "bower_components/angular-inline-text-editor/ite.css"],
+            "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/bootstrap/dist/css/bootstrap.min.css.map", "bower_components/angular-inline-text-editor/ite.css", "bower_components/angular-bootstrap/ui-bootstrap-csp.css"],
             "fonts": "bower_components/font-awesome/fonts",
             verbose: true,
             onlyChanged: true
