@@ -1,0 +1,130 @@
+@import 'colors';
+
+/* height element*/
+
+.large {
+  height: 300px;
+}
+
+.medium {
+  height : 200px;
+}
+
+.mini{
+  height: 150px;
+}
+
+.local{
+  height: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.local2{
+  height: 50px;
+}
+
+.picto {
+  height: 80px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px){
+
+  .large { height: 150px; }
+
+  .medium { height : 100px; }
+
+  .mini { height: 75px; }
+
+  .local { height: 25px; }
+  .local2 { height: 25px; }
+  .picto { height: 40px; }
+}
+@media (min-width: 769px) and (max-width: 992px){
+
+  .large { height: 200px; }
+
+  .medium { height : 150px; }
+
+  .mini { height: 100px; }
+
+  .local { height: 50px; }
+  .local2 { height: 50px; }
+  .picto { height: 60px; }
+}
+/* design element*/
+
+.office {
+  border: solid $dark-gray 2px;
+  border-bottom: none;
+
+  background-color: $gray;
+}
+
+.open-space{
+  background-color : $gray;
+}
+
+.hall{
+  background-color : $gray;
+}
+
+.meeting-room{
+  background-color : $gray;
+  border: solid $dark-gray 2px;
+  border-bottom: none;
+  border-left : none;
+}
+
+.kitchen{
+  background-color : $gray;
+  border : solid $dark-gray 2px;
+  border-bottom: none;
+}
+
+.babyfoot{
+  background-color: $gray;
+  border-bottom: solid $dark-gray 2px;
+  border-right: solid $dark-gray 2px;
+}
+
+.elevator{
+  background-color: $gray;
+  border-left : solid $dark-gray 2px;
+  border-right: solid $dark-gray 2px;
+}
+
+.wc{
+  background-color: $gray;
+  border : solid $dark-gray 2px;
+}
+
+.bordure-top{
+  border-top : none;
+}
+
+.bordure-bottom{
+  border-bottom: dashed $dark-gray 2px;
+}
+
+/* au survol */
+
+.local:hover, .local2:hover{
+  background-color: $primary;
+  border-radius: 25px;
+}
+
+#cuisine:hover {
+  background-color: $primary;
+  border-radius: 25px;
+}
+
+/* Modal */
+
+/*.btn{
+  margin-left : 95%;
+}*/
