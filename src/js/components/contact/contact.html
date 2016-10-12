@@ -1,47 +1,82 @@
 <section>
 
-<button type="button" class="btn btn-default ctab center-block btn-lg" ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed">Contact Us Before Someone Else Does</button>
-<hr>
-<div uib-collapse="$ctrl.isCollapsed">
-<div class="well well-lg">
+<div id="map"></div>
 
-<form name="contactForm" ng-submit="" novalidate>
+<h1>Contactez Nous</h1>
+<p>
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+   sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
 
-  <div class="container-fluid form1">
-      <div class="row">
 
-          <div class="form-group col-xs-12 input-group">
+<form name="contactForm" class="conatiner-fluid" ng-submit="" novalidate>
+
+
+    <div class="row">
+        <div class="col-xs-offset-3 col-xs-3">
+          <div class="form-group input-group">
               <span class="input-group-addon"><i class="fa fa-user-plus"></i></span>
               <input type="text" class="form-control" placeholder="Name" id="usr" ng-model="contact.name" ng-required="true"/>
             </div>
+        </div>
 
-            <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
-              <small style="color: red; display: block; text-align: center;">Enter a valid name</small>
+        <div class="col-xs-offset-6 col-xs-3">
+            <div class="form-group input-group">
+                <span class="input-group-addon" ><i class="fa fa-building-o"></i></span>
+                <input type="text" class="form-control" placeholder="Enterprise" id="enterprise" ng-model="contact.company"/>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+              <div class="form-group input-group">
+                  <span class="input-group-addon"><i class="fa fa-at"></i></span>
+                  <input type="email" class="form-control" placeholder="E-mail" id="email" ng-model="contact.email" ng-required="true"/>
+                </div>
             </div>
 
-            <div class="form-group col-xs-12 input-group">
-                <span class="input-group-addon" ><i class="fa fa-at"></i></span>
-                <input type="email" class="form-control" placeholder="Email" id="email" ng-model="contact.email" ng-required="true"/>
-            </div>
+  <div class="col-md-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="btn-group" uib-dropdown>
+           <button id="split-button" type="button" class="btn btn-danger">Action</button>
+           <button type="button" class="btn btn-danger" uib-dropdown-toggle>
+             <span class="caret"></span>
+             <span class="sr-only">Split button!</span>
+           </button>
+           <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
+             <li role="menuitem"><a href="#">Action</a></li>
+             <li role="menuitem"><a href="#">Another action</a></li>
+             <li role="menuitem"><a href="#">Something else here</a></li>
+             <li class="divider"></li>
+             <li role="menuitem"><a href="#">Separated link</a></li>
+           </ul>
+         </div>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div>
 
-          <div class="form-group col-xs-12 input-group">
-              <span class="input-group-addon" ><i class="fa fa-building-o"></i></span>
-              <input type="text" class="form-control" placeholder="Company" id="company" ng-model="contact.company"/>
-          </div>
 
 
-          <div class="form-group col-xs-12 input-group">
-              <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-              <input type="text" class="form-control" placeholder="Subject" id="subject" ng-model="contact.subject" ng-required="true"/>
-          </div>
-
-          <div class="col-xs-12 textarea input-group">
-            <span class="input-group-addon"><i class="fa fa-paper-plane-o"></i></span>
-              <textarea class="form-control" rows="6" placeholder="Leave a Message" ng-required="true"></textarea>
-          </div>
 
 
-        <div class=" form-group col-xs-12 checkbox text-center">
+  <div class="col-xs-12 textarea input-group">
+          <span class="input-group-addon"><i class="fa fa-paper-plane-o"></i></span>
+            <textarea class="form-control" rows="6" placeholder="Leave a Message" ng-required="true"></textarea>
+        </div>
+
+
+
+ </form>
+
+
+      <!--  <div class=" form-group col-xs-12 checkbox text-center">
               <label><input type="checkbox" value="">Co-working</label>
           </div>
 
@@ -57,39 +92,22 @@
      <div class=" form-group col-xs-12 checkbox text-center">
     <label><input type="checkbox" value="">Demander une Visite</label>
     </div>
+-->
+    <button type="submit" value="Send" class="btn btn-default btn-lg center-block btn1" ng-disabled="contactForm.$invalid">Submit</button>
 
-    <button type="submit" value="Send" class="btn btn-default center-block btn1" ng-disabled="contactForm.$invalid">Submit</button>
 
-      </div>
-  </div>
 
-</form>
-</div>
-</div>
-<!-- ================================
-CONTACT FORM
-====================================== -->
 
 <!-- ================================
 CONTACT FORM
 ====================================== -->
 
 <!-- ================================
-START OF GOOGLE GEO LOCATION
+CONTACT FORM
 ====================================== -->
-<div class="container-fluid">
-<div class="row">
-<div id="containermap" class=" col-6">
-  <section id="wrapper" class="map">
-      <article></article>
-  </section>
-</div>
-</div>
-</div>
-<!-- ================================
-END OF GOOGLE GEO LOCATION
-====================================== -->
-<div id="map"></div>
+
+
+
 <!-- ================================
 FOOTER START
 ====================================== -->

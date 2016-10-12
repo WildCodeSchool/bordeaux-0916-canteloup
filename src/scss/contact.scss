@@ -11,11 +11,11 @@
 
 .form1 {
     margin-top: 6.250rem;
+}
 
-    .textarea {
-        margin-top: 0.625rem;
-        margin-bottom: 1rem;
-  }
+.textarea {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
@@ -34,7 +34,7 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
     border: none;
   }
     button[disabled="disabled"]{
-      opacity: 0.4;
+      opacity: 0;
       cursor: not-allowed !important;
     }
 
