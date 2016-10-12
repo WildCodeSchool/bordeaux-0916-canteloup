@@ -62,44 +62,44 @@
   border: solid $dark-gray 2px;
   border-bottom: none;
 
-  background-color: $gray;
+  //background-color: $gray;
 }
 
 .open-space{
-  background-color : $gray;
+  //background-color : $gray;
 }
 
 .hall{
-  background-color : $gray;
+  //background-color : $gray;
 }
 
 .meeting-room{
-  background-color : $gray;
+  //background-color : $gray;
   border: solid $dark-gray 2px;
   border-bottom: none;
   border-left : none;
 }
 
 .kitchen{
-  background-color : $gray;
+  //background-color : $gray;
   border : solid $dark-gray 2px;
   border-bottom: none;
 }
 
 .babyfoot{
-  background-color: $gray;
+  //background-color: $gray;
   border-bottom: solid $dark-gray 2px;
   border-right: solid $dark-gray 2px;
 }
 
 .elevator{
-  background-color: $gray;
-  border-left : solid $dark-gray 2px;
-  border-right: solid $dark-gray 2px;
+  //background-color: $gray;
+  border : solid $dark-gray 2px;
+  border-bottom: none;
 }
 
 .wc{
-  background-color: $gray;
+  //background-color: $gray;
   border : solid $dark-gray 2px;
 }
 
@@ -107,8 +107,12 @@
   border-top : none;
 }
 
-.bordure-bottom{
+.bordure-bottom-dash {
   border-bottom: dashed $dark-gray 2px;
+}
+
+.bordure-bottom{
+  border-bottom: solid $dark-gray 2px;
 }
 
 /* au survol */
