@@ -1,5 +1,32 @@
 @import 'colors';
 
+/* Common */
+.normal_bloc{
+  max-width: 800px;
+  margin-top : 5%;
+}
+.medium_bloc{
+  max-width: 1000px;
+}
+.large_bloc{
+  max-width : 100%;
+  margin-top : 5%;
+  margin-bottom : 5%;
+}
+
+strong {
+  color : $primary;
+}
+
+h1{
+  text-align: center;
+  margin : 4% ;
+}
+
+img{
+  margin-bottom : 5%;
+}
+.black{background-color: $black; width:100%;}
 /* intro */
 
 .intro {
@@ -25,4 +52,30 @@
 
 .concepts {
     margin-top: 20px;
+}
+
+
+/* bouttons */
+
+
+
+.btn-default {
+  background-color: $transparent;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary;
+  border: solid $primary 2px;
+  padding : 10px;
+  border-radius : 20px;
+  margin-bottom: 40px;
+}
+
+.btn-default:hover {
+  background-color: $primary;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: solid $transparent 2px;
+  padding : 10px;
+  border-radius : 20px;
 }
