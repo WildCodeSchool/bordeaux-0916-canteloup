@@ -1,5 +1,5 @@
 /* base colors */
-$background: #000000;
+$background: #ffffff;
 $text-default: #727272;
 $text-edit: #faebd7;
 $white: #FFF;
@@ -14,7 +14,11 @@ $green: #4CAF50;
 $green-dark: #1B5E20;
 /* theme colors */
 $primary: #fc4a43;
+<<<<<<< HEAD
 $primary-dark: #EBE7E0;
+=======
+$primary-dark: #009c95;
+>>>>>>> dev
 $secondary: $orange;
 $secondary-dark: $orange-dark;
-$transparent: rgba(255,255,255,0.3);
+$transparent: rgba(255,255,255,0);

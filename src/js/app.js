@@ -41,7 +41,10 @@
 
     app.directive('checkPassword', checkPassword)
     app.directive('gravatar', gravatar)
-    app.run()
+    app.run(($rootScope, $location, $stateParams, $anchorScroll) => {
+        $rootScope.$on('$stateChangeSuccess', (event, toState) => {
+            document.body.scrollTop = document.documentElement.scrollTop = 0
+        })})
 
 })(angular.module('app', [
     'ui.router',
