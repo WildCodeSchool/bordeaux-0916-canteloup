@@ -1,4 +1,4 @@
-<form name="contactForm" class="conatiner-fluid" ng-submit="" novalidate>
+<form name="contactForm" class="conatiner-fluid" ng-submit="$ctrl.saveUser()" novalidate>
 
     <div class="row row1">
         <div class="col-xs-offset-2 col-xs-4">
@@ -6,7 +6,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-user-plus"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Name" id="usr" ng-model="contact.name"  ng-required="true"/>
+                <input type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true"/>
             </div>
         </div>
 
@@ -15,7 +15,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-building-o"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Enterprise" id="enterprise"  ng-model="contact.company"/>
+                <input type="text" class="form-control" placeholder="Enterprise" id="enterprise" ng-model="$ctrl.contactInfo.company"/>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-at"></i>
                 </span>
-                <input type="email" class="form-control" placeholder="E-mail" id="email" ng-model="contact.email"  ng-required="true"/>
+                <input type="email" class="form-control" placeholder="E-mail" id="email" ng-model="$ctrl.contactInfo.email" ng-required="true"/>
             </div>
         </div>
 
@@ -35,18 +35,24 @@
                 <span class="input-group-addon">
                     <i class="fa fa-pencil"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Suject" id="" ng-model="subject.email"  ng-required="true"/>
+                <input type="text" class="form-control" placeholder="Suject" id="" ng-model="$ctrl.contactInfo.subject" ng-required="true"/>
             </div>
         </div>
-      </div>
+    </div>
 
+    <div class="col-xs-offset-2 col-xs-8 textarea input-group">
+        <textarea class="form-control message" rows="6" placeholder="Leave a Message" ng-model="$ctrl.contactInfo.message" ng-required="true"></textarea>
+    </div>
 
-        <div class="col-xs-offset-2 col-xs-8 textarea input-group">
-          <textarea class="form-control message" rows="6" placeholder="Leave a Message"  ng-required="true"></textarea>
-        </div>
-
-
+    <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default btn1" ng-disabled="contactForm.$invalid">
+        Envoyer
+    </button>
 
 </form>
 
-<button type="submit" value="Send" class="btn btn-default btn-md center-block btn1" ng-disabled="contactForm.$invalid">ENVOYER</button>
+<ul>
+    <li ng-repeat="item in user">
+        {{ 'user: ' + item.name + " " + item.company + " " + item.email +
+          " " + item.subject + " " + item.message}}
+    </li>
+</ul>

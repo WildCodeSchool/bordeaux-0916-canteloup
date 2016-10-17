@@ -11,9 +11,10 @@
     line-height: 30px;
 }
 
+/* Navbar Mouse color */
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: #C0C0C0 !important;
 }
 
 .navbar-nav > .selected > a {
