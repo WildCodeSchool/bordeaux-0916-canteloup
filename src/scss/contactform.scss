@@ -1,5 +1,4 @@
 
-
 @import 'colors';
 
 .form-control{
@@ -18,10 +17,18 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
 }
 
 /* submit button */
-button[disabled="disabled"]{
+.btn1{ margin-top: 2rem;
+
+.btn1[disabled="disabled"]{
       opacity: 0;
       cursor: not-allowed !important;
     }
+}
+
+.inline>{
+  width: 0.625rem;
+  height: 0.625rem;
+}
 
 /* map */
 #map { height: 500px; }
