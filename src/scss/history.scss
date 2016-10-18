@@ -1,0 +1,37 @@
+@import 'colors';
+
+/* intro */
+
+.headers {
+    background-image: url('../img/pictures/openspaceNB.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 500px;
+    margin-bottom: 10px;
+}
+.intro-title {
+    font-size: 4em;
+    margin-top: 80px;
+    color:$primary;
+    //text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
+    margin-bottom: 80px;
+}
+.subtitle {
+  color:$white;
+  font-size: 2em;
+}
+
+/* Common */
+
+.normal_bloc{
+  max-width: 800px;
+  margin-top : 5%;
+}
+.medium_bloc{
+  max-width: 1000px;
+}
+.large_bloc{
+  max-width : 100%;
+  margin-top : 5%;
+  margin-bottom : 5%;
+}

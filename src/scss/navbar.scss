@@ -9,16 +9,22 @@
 .navbar-nav > li > a {
     color: $black !important;
     line-height: 30px;
+    font-weight: bold;
+}
+
+a.ng-binding:active{
+  color : $primary;
 }
 
 /* Navbar Mouse color */
+
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
     color: #C0C0C0 !important;
 }
 
 .navbar-nav > .selected > a {
-    border-bottom: 2px solid $white;
+    border-bottom: 2px solid $primary;
 }
 
 .navbar-nav > li > a > img.circle {
@@ -36,6 +42,7 @@ button.navbar-default > .icon-bar,
 button.navbar-toggle:hover > .icon-bar {
     background-color: $primary !important;
 }
+
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: $white;
