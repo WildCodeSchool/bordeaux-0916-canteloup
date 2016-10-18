@@ -27,13 +27,15 @@ img.window{
   margin-bottom : 5%;
 }
 
+.black{
+  background-color: $black;
+  width:100%;
+}
 
-
-.black{background-color: $black; width:100%;}
 /* intro */
 
 .intro {
-    background-image: url('../img/AtelierCanteloup.jpg');
+    //background-image: url('../img/AtelierCanteloup.jpg');
     background-position: bottom;
     background-size: cover;
     min-height: 900px;
@@ -41,26 +43,24 @@ img.window{
     margin-bottom: 10px;
 }
 
-.intro-title {
-    font-size: 50px;
-    margin-top: 50px;
-    color:$black;
-    text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
-}
-.subtitle{
-  color:$secondary;
-}
+// .intro-title {
+//     font-size: 50px;
+//     margin-top: 50px;
+//     color:$black;
+//     text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
+// }
+// .subtitle{
+//   color:$secondary;
+// }
 
 /* concepts */
 
-.concepts {
-    margin-top: 20px;
-}
+// .concepts {
+//     margin-top: 20px;
+// }
 
 
 /* bouttons */
-
-
 
 .btn-default {
   background-color: $transparent;
