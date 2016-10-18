@@ -3,20 +3,21 @@
 app > .container {
     padding-bottom: 60px;
 }
+
 /* footer */
-.footer {
-    background-color: $transparent;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    color: $black;
-}
-.footer > .container {
-    padding: 15px;
-}
-.footer > .container > span > a,
-.footer > .container > span > a:hover,
-.footer > .container > span > a:visited {
-    color: $black;
-}
+// .footer {
+//     background-color: $transparent;
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     height: 50px;
+//     color: $black;
+// }
+// .footer > .container {
+//     padding: 15px;
+// }
+// .footer > .container > span > a,
+// .footer > .container > span > a:hover,
+// .footer > .container > span > a:visited {
+//     color: $black;
+// }

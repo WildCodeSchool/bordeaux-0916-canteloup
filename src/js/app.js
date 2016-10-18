@@ -59,6 +59,7 @@
     'app.services',
     'app.common',
     'app.home',
+    'app.history',
     'app.about',
     'app.tarifs',
     'app.coworkers',

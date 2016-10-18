@@ -3,19 +3,19 @@
 /* height element*/
 
 .large {
-  height: 300px;
+  height: 164px;
 }
 
 .medium {
-  height : 200px;
+  height : 135px;
 }
 
 .mini{
-  height: 150px;
+  height: 75px;
 }
 
 .local{
-  height: 50px;
+  height: 30px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -27,97 +27,50 @@
 
 .picto {
   height: 80px;
+  height: 30px;
+}
+
+.local3{
+  height: 30px;
+  margin-left: 0px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.picto {
+  height: 40px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
 @media (max-width: 768px){
+  .large { height: 75px; }
 
-  .large { height: 150px; }
+  .medium { height : 50px; }
 
-  .medium { height : 100px; }
+  .mini { height: 25px; }
 
-  .mini { height: 75px; }
-
-  .local { height: 25px; }
-  .local2 { height: 25px; }
-  .picto { height: 40px; }
+  .local { height: 12px; }
+  .local2 { height: 12px; }
+  .picto { height: 20px; }
 }
 @media (min-width: 769px) and (max-width: 992px){
 
-  .large { height: 200px; }
+  .large { height: 100px; }
 
-  .medium { height : 150px; }
+  .medium { height : 75px; }
 
-  .mini { height: 100px; }
+  .mini { height: 50px; }
 
-  .local { height: 50px; }
-  .local2 { height: 50px; }
-  .picto { height: 60px; }
-}
-/* design element*/
-
-.office {
-  border: solid $dark-gray 2px;
-  border-bottom: none;
-
-  //background-color: $gray;
-}
-
-.open-space{
-  //background-color : $gray;
-}
-
-.hall{
-  //background-color : $gray;
-}
-
-.meeting-room{
-  //background-color : $gray;
-  border: solid $dark-gray 2px;
-  border-bottom: none;
-  border-left : none;
-}
-
-.kitchen{
-  //background-color : $gray;
-  border : solid $dark-gray 2px;
-  border-bottom: none;
-}
-
-.babyfoot{
-  //background-color: $gray;
-  border-bottom: solid $dark-gray 2px;
-  border-right: solid $dark-gray 2px;
-}
-
-.elevator{
-  //background-color: $gray;
-  border : solid $dark-gray 2px;
-  border-bottom: none;
-}
-
-.wc{
-  //background-color: $gray;
-  border : solid $dark-gray 2px;
-}
-
-.bordure-top{
-  border-top : none;
-}
-
-.bordure-bottom-dash {
-  border-bottom: dashed $dark-gray 2px;
-}
-
-.bordure-bottom{
-  border-bottom: solid $dark-gray 2px;
+  .local { height: 25px; }
+  .local2 { height: 25px; }
+  .picto { height: 30px; }
 }
 
 /* au survol */
-
-.local:hover, .local2:hover{
+.local:hover, .local2:hover, .local3:hover{
   background-color: $primary;
   border-radius: 25px;
 }
