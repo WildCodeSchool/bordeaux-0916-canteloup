@@ -22,11 +22,6 @@
 }
 
 .local2{
-  height: 50px;
-}
-
-.picto {
-  height: 80px;
   height: 30px;
 }
 
@@ -39,13 +34,23 @@
 }
 
 .picto {
+  height: 80px;
+  height: 30px;
+  // position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+}
+
+.local3{
   height: 40px;
+  margin-left: 0px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
 @media (max-width: 768px){
+
   .large { height: 75px; }
 
   .medium { height : 50px; }
@@ -56,6 +61,7 @@
   .local2 { height: 12px; }
   .picto { height: 20px; }
 }
+
 @media (min-width: 769px) and (max-width: 992px){
 
   .large { height: 100px; }
@@ -70,6 +76,7 @@
 }
 
 /* au survol */
+
 .local:hover, .local2:hover, .local3:hover{
   background-color: $primary;
   border-radius: 25px;
