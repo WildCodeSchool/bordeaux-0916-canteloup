@@ -1,26 +1,84 @@
 @import 'colors';
 
+/* Common */
+.normal_bloc{
+  max-width: 800px;
+  margin-top : 5%;
+}
+.medium_bloc{
+  max-width: 1000px;
+}
+.large_bloc{
+  max-width : 100%;
+  margin-top : 5%;
+  margin-bottom : 5%;
+}
+
+strong {
+  color : $primary;
+}
+
+h1{
+  text-align: center;
+  margin : 4% ;
+}
+
+img.window{
+  margin-bottom : 5%;
+}
+
+.black{
+  background-color: $black;
+  width:100%;
+}
+
 /* intro */
 
 .intro {
-    background-image: url('../img/AtelierCanteloup.jpg');
+    //background-image: url('../img/AtelierCanteloup.jpg');
     background-position: bottom;
     background-size: cover;
     min-height: 900px;
+    width : 100%;
     margin-bottom: 10px;
 }
-.intro-title {
-    font-size: 50px;
-    margin-top: 50px;
-    color:$black;
-    text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
-}
-.subtitle{
-  color:$secondary;
-}
+
+// .intro-title {
+//     font-size: 50px;
+//     margin-top: 50px;
+//     color:$black;
+//     text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
+// }
+// .subtitle{
+//   color:$secondary;
+// }
 
 /* concepts */
 
-.concepts {
-    margin-top: 20px;
+// .concepts {
+//     margin-top: 20px;
+// }
+
+
+/* bouttons */
+
+.btn-default {
+  background-color: $transparent;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary;
+  border: solid $primary 2px;
+  padding : 10px;
+  border-radius : 20px;
+  margin-bottom: 40px;
+}
+
+.btn-default:hover {
+  background-color: $primary;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: solid $transparent 2px;
+  padding : 10px;
+  border-radius : 20px;
 }

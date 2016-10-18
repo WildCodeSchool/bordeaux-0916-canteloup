@@ -1,3 +1,27 @@
+
+
 @import 'colors';
 
-/*  */
+.form-control{
+background-color: #dddddd;
+border-radius: 20px;
+}
+
+textarea.message {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px !important;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+/* submit button */
+button[disabled="disabled"]{
+      opacity: 0;
+      cursor: not-allowed !important;
+    }
+
+/* map */
+#map { height: 500px; }
