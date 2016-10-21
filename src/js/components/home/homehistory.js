@@ -1,6 +1,6 @@
 ((app) => {
     'use strict'
     app.component("homehistory", {
-        templateUrl: 'js/components/common/homehistory.html'
+        templateUrl: 'js/components/home/homehistory.html'
     })
 })(angular.module('app.common'))
