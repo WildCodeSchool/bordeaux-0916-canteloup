@@ -52,6 +52,8 @@
 
 /* prices table */
 
+.pricingTable{ background-color: $dark-gray;}
+
 table {
   border-collapse: collapse;
   border : solid 2px;
@@ -83,4 +85,22 @@ table {
   .pull-left{
     display : none;
   }
+}
+
+/* prix */
+
+
+.pricingTable{
+  color: $white;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
