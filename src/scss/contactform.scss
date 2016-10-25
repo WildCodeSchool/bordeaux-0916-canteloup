@@ -20,7 +20,7 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
 
 
 .btn1[disabled="disabled"]{
-      opacity: 0;
+      opacity: .4;
       cursor: not-allowed !important;
     }
 }
@@ -31,5 +31,6 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
 }
 
 /* map */
-
-#map { height: 500px; }
+#map {
+  height: 500px;
+}

@@ -6,7 +6,15 @@
                 <span class="input-group-addon">
                     <i class="fa fa-user-plus"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true"/>
+                <input type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true" ng-minlength="2" ng-maxlength="15"/>
+                <!-- $dirty is set to true if a user interacts with a element and then we check if the elements required field is true -->
+                <span class="error-message" ng-show="contactInfo.fName.$dirty
+        && userForm.fName.$error.required">Must Enter a First Name
+                </span>
+
+                <!-- Check if the element has been edited and whether it contains at least 2 characters -->
+                <span class="error-message" ng-show="contactInfo.fName.$dirty
+          && userForm.fName.$error.minlength">Must be a Minimum of 2 Characters</span>
             </div>
         </div>
 
@@ -15,7 +23,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-building-o"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Enterprise" id="enterprise" ng-model="$ctrl.contactInfo.company"/>
+                <input type="text" class="form-control" placeholder="Enterprise" id="enterprise" ng-model="$ctrl.contactInfo.company" ng-minlength="2" ng-maxlength="20"/>
             </div>
         </div>
     </div>
@@ -26,7 +34,10 @@
                 <span class="input-group-addon">
                     <i class="fa fa-at"></i>
                 </span>
-                <input type="email" class="form-control" placeholder="E-mail" id="email" ng-model="$ctrl.contactInfo.email" ng-required="true"/>
+                <input type="email" class="form-control" placeholder="E-mail" id="email" ng-model="$ctrl.contactInfo.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
+                <span class="error-message" ng-show="contactInfo.email.$dirty
+        && contactInfo.email.$error.required">Must Enter An Email
+                </span>
             </div>
         </div>
 
@@ -36,6 +47,9 @@
                     <i class="fa fa-pencil"></i>
                 </span>
                 <input type="text" class="form-control" placeholder="Suject" id="" ng-model="$ctrl.contactInfo.subject" ng-required="true"/>
+                <span class="error-message" ng-show="contactInfo.subject.$dirty
+        && contactInfo.subject.$error.required">Must choose a Subject
+                </span>
             </div>
         </div>
     </div>
@@ -49,10 +63,3 @@
     </button>
 
 </form>
-
-<ul>
-    <li ng-repeat="item in user">
-        {{ 'user: ' + item.name + " " + item.company + " " + item.email +
-          " " + item.subject + " " + item.message}}
-    </li>
-</ul>
