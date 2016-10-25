@@ -1,6 +1,6 @@
 ((app) => {
     'use strict'
     app.component("modal", {
-        templateUrl: 'js/components/common/modal.html'
+        templateUrl: 'js/components/tarifs/modal.html'
     })
 })(angular.module('app.common'))

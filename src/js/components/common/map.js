@@ -11,19 +11,27 @@
                         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                     }).addTo(map);
 
-                    L.marker([44.8336476, -0.5660190999999486]).addTo(map)
+                    var targetIcon = L.icon({
+                          iconUrl: '../img/icons/target.png',
+                          iconSize:     [70, 50], // size of the icon
+                          iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                          shadowAnchor: [4, 62],  // the same for the shadow
+                          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                      });
+
+                    L.marker([44.8336476, -0.5660190999999486],{icon: targetIcon}).addTo(map)
                         .bindPopup(' L&rsquo;atielier Canteloup <br> 15 Place Canteloup, 33800 Bordeaux, France')
                         .openPopup();
 
-                        L.marker([44.823462, -0.556514]).addTo(map)
+                        L.marker([44.823462, -0.556514], {icon: targetIcon}).addTo(map)
                             .bindPopup(' Gare St Jean <br>  Bordeaux, France')
                             .openPopup();
 
-                            L.marker([44.836949, -0.573703]).addTo(map)
+                            L.marker([44.836949, -0.573703], {icon: targetIcon}).addTo(map)
                                 .bindPopup(' Rue St Catherine <br>  Bordeaux, France')
                                 .openPopup();
 
-                                L.marker([44.844717, -0.573475]).addTo(map)
+                                L.marker([44.844717, -0.573475], {icon: targetIcon}).addTo(map)
                                     .bindPopup(' Place de Quinconces <br>  Bordeaux, France')
                                     .openPopup();
                                     // control that shows state info on hover
