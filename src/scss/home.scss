@@ -25,6 +25,7 @@ h1{
 
 img.window{
   margin-bottom : 5%;
+
 }
 
 .black{
@@ -35,12 +36,16 @@ img.window{
 /* intro */
 
 .intro {
-    //background-image: url('../img/AtelierCanteloup.jpg');
+    background-image: url('../img/pictures/Visu-Home-TOP.png');
     background-position: bottom;
     background-size: cover;
     min-height: 900px;
     width : 100%;
-    margin-bottom: 10px;
+    margin-bottom: 8%;
+}
+.logo-titre{
+  margin : auto;
+  margin-top: 10%;
 }
 
 // .intro-title {
@@ -49,9 +54,14 @@ img.window{
 //     color:$black;
 //     text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
 // }
-// .subtitle{
-//   color:$secondary;
-// }
+
+.intro-subtitle{
+  font-family: Lato Light;
+  color:$white;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10% 20% 0 20%;
+}
 
 /* concepts */
 
@@ -62,22 +72,20 @@ img.window{
 /* bouttons */
 
 .btn-default {
-  background-color: $transparent;
+  font-family: Lato Black;
   text-align: center;
   text-transform: uppercase;
-  color: $primary;
-  border: solid $primary 2px;
   padding : 10px;
   border-radius : 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top : 30px;
+  background-color: $primary;
+  color: $white;
+  border: solid $transparent 2px;
 }
 
 .btn-default:hover {
-  background-color: $primary;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-  border: solid $transparent 2px;
-  padding : 10px;
-  border-radius : 20px;
+  background-color: $transparent;
+  color: $primary;
+  border: solid $primary 2px;
 }

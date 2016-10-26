@@ -9,6 +9,7 @@ body {
     //padding-top: 70px;
     background-color: $background;
     color: $text-default;
+    font-family: Lato ;
 }
 /* form */
 .form {
@@ -36,14 +37,14 @@ body {
 }
 
 section > div.container {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 /* button */
 .btn,
 .input-group-addon,
 input {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .pagination > li > a {

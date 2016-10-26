@@ -1,11 +1,16 @@
-footer {
-  background-color: #242424;
-  height: 15rem !important;
+
+.row{
+  margin-right: none;
 }
 
-h4 {
+
+footer {
+  background-color: #242424;
+}
+
+.ftitre {
  list-style-type: underline !important;
- text-align: left;
+ text-align: center;
 }
 
 .footer-logo{
@@ -17,7 +22,7 @@ h4 {
 
 ul>li{
 list-style-type: none;
-text-align: left;
+/*text-align: left;*/
 }
 
 .footer-strip {
@@ -31,6 +36,4 @@ text-align: left;
   width: 3rem;
   height: 3rem;
   margin-top: 2px;
-
-
 }

@@ -19,7 +19,7 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
 
 /* submit button */
 button[disabled="disabled"]{
-      opacity: 0;
+      opacity: .4;
       cursor: not-allowed !important;
     }
 
