@@ -23,11 +23,6 @@ h1{
   margin : 4% ;
 }
 
-img.window{
-  margin-bottom : 5%;
-
-}
-
 .black{
   background-color: $black;
   width:100%;
@@ -36,7 +31,7 @@ img.window{
 /* intro */
 
 .intro {
-    background-image: url('../img/pictures/Visu-Home-TOP.png');
+    background-image: url('/img/pictures/Visu-Home-TOP.png');
     background-position: bottom;
     background-size: cover;
     min-height: 900px;
@@ -63,11 +58,36 @@ img.window{
   padding: 10% 20% 0 20%;
 }
 
-/* concepts */
+/* Home content */
 
-// .concepts {
-//     margin-top: 20px;
-// }
+img.window{
+  margin-bottom : 5%;
+}
+
+.img_backgroung_logo{
+  background-image: url(/img/pictures/visu-background-coworkers.png);
+}
+
+/* intro other pages */
+
+.headers {
+    background-image: url('../img/pictures/openspaceNB.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 500px;
+    margin-bottom: 10px;
+}
+.intro-title {
+    font-size: 4em;
+    margin-top: 80px;
+    color:$primary;
+    //text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
+    margin-bottom: 80px;
+}
+.subtitle {
+  color:$white;
+  font-size: 2em;
+}
 
 /* bouttons */
 
