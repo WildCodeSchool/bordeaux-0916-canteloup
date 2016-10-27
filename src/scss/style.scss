@@ -93,7 +93,9 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 .css-label {
     background-image: url('../img/checkbox.png');
 }
+
 /* floating button */
+
 // .btn-floating {
 //     color: $white;
 //     z-index: 1;
@@ -119,44 +121,7 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 //     bottom: 55px;
 // }
 /* buttons */
-<<<<<<< HEAD
-.btn,
-.btn:focus {
-    color: $white;
-    text-shadow: none;
-    background-image: none;
-}
 
-.btn:hover {
-    background-color: $primary;
-    color: $black;
-    text-shadow: none;
-}
-
-.btn.success {
-    background-color: $green !important;
-}
-
-.btn.success:hover {
-    background-color: $green-dark !important;
-}
-
-.btn.warning {
-    background-color: $secondary !important;
-}
-
-.btn.warning:hover {
-    background-color: $secondary-dark !important;
-}
-
-.btn.danger {
-    background-color: $red !important;
-}
-
-.btn.danger:hover {
-    background-color: $red-dark !important;
-}
-=======
 // .btn,
 // .btn:focus {
 //     background-color:none ;
@@ -195,7 +160,7 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 // .btn.danger:hover {
 //     background-color: $red-dark !important;
 // }
->>>>>>> b014a7e82c5ed804861a2339c259ec1cbff0b5de
+
 /* editor */
 .editable {
     background: $text-edit;
