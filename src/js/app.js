@@ -60,5 +60,6 @@
     'app.tarifs',
     'app.coworkers',
     'app.contact',
-    'app.events'
+    'app.events',
+    'app.admin'
 ]))
