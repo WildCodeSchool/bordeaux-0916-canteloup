@@ -120,11 +120,9 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 /* buttons */
 .btn,
 .btn:focus {
-    background-color:none ;
-    color: $primary;
+    color: $white;
     text-shadow: none;
     background-image: none;
-    border: $primary;
 }
 
 .btn:hover {
@@ -159,4 +157,5 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 /* editor */
 .editable {
     background: $text-edit;
+    color: $white;
 }
