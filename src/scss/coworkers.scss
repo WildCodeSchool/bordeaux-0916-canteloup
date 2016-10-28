@@ -1,45 +1,44 @@
 @import 'colors';
 
-/*  */
-<<<<<<< HEAD
+.co-workers {
+    height: 102vh;
+    width: 100%;
+    background-color: #000;
+    margin: 0;
 
-=======
-.co-workers{
-  height: 102vh;
-  width: 100%;
-  background-color: #000;
-  margin: 0px;
-  h1{
-    margin-top: 90px;
-  }
-.work-logos1
-//,
-// .work-logos2,
-// .work-logos3
-{
-margin-top: 10rem;
-.center-block {
-  text-align: left;
- }
-}
-}
->>>>>>> b014a7e82c5ed804861a2339c259ec1cbff0b5de
+    h1 {
+        margin-top: 90px;
+    }
 
-.large-bloc-black {background-color : $black;}
-=======
-.co-workers{
-  width: 100%;
-  background-color: #000;
-  margin: 0px;
-  h1{
-    margin-top: 90px;
-  }
-.work-logos1,
-.work-logos2,
-.work-logos3{
-margin-top: 10rem;
-.center-block {
-  text-align: left;
- }
+    .work-logos1 {
+        margin-top: 10rem;
+
+        .center-block {
+            text-align: left;
+        }
+    }
 }
+
+.large-bloc-black {
+    background-color: $black;
+}
+
+.co-workers {
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+
+    h1 {
+        margin-top: 90px;
+    }
+
+    .work-logos1,
+    .work-logos2,
+    .work-logos3 {
+        margin-top: 10rem;
+
+        .center-block {
+            text-align: left;
+        }
+    }
 }

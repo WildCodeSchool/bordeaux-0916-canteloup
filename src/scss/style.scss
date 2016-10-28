@@ -9,15 +9,14 @@ body {
     //padding-top: 70px;
     background-color: $background;
     color: $text-default;
-    font-family: Lato ;
+    font-family: Lato;
 }
-
 /* form */
 .form {
     background: $white;
     padding: 20px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    margin: 0 1% 0 1%;
+    margin: 0 1%;
 }
 
 .sub-form {
@@ -38,9 +37,8 @@ body {
 }
 
 section > div.container {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-
 /* button */
 // .btn,
 // .input-group-addon,
@@ -65,8 +63,10 @@ section > div.container {
 .form-control:focus {
     border-color: $primary;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px /*rgba(0, 181, 173, .6)*/;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px /*rgba(0, 181, 173, .6)*/;
+    /*rgba(0, 181, 173, .6)*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px;
+    /*rgba(0, 181, 173, .6)*/
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px;
 }
 /* checkbox */
 input[type=checkbox].css-checkbox {
@@ -119,7 +119,6 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 //     bottom: 55px;
 // }
 /* buttons */
-<<<<<<< HEAD
 .btn,
 .btn:focus {
     color: $white;
@@ -156,7 +155,6 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 .btn.danger:hover {
     background-color: $red-dark !important;
 }
-=======
 // .btn,
 // .btn:focus {
 //     background-color:none ;
@@ -195,7 +193,6 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 // .btn.danger:hover {
 //     background-color: $red-dark !important;
 // }
->>>>>>> b014a7e82c5ed804861a2339c259ec1cbff0b5de
 /* editor */
 .editable {
     background: $text-edit;
