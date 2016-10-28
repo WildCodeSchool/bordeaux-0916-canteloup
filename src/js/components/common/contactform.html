@@ -1,4 +1,4 @@
-<form name="contactForm" class="conatiner-fluid" ng-submit="$ctrl.saveUser()" novalidate>
+<form name="contactForm" class="container-fluid" ng-submit="$ctrl.saveUser()" novalidate>
 
     <div class="row row1">
         <div class="col-xs-offset-2 col-xs-4">
@@ -6,17 +6,12 @@
                 <span class="input-group-addon">
                     <i class="fa fa-user-plus"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true" ng-minlength="2" ng-maxlength="15"/>
-
-
-              <!--  <span class="error-message" ng-show="contactInfo.fName.$dirty
-        && userForm.fName.$error.required">Must Enter a First Name
-                </span>
-                <span class="error-message" ng-show="contactInfo.fName.$dirty
-          && userForm.fName.$error.minlength">Must be a Minimum of 2 Characters
-                </span>
--->
-
+                <input name="name" type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true" ng-minlength="2" ng-maxlength="15" />
+            </div>
+            <div ng-if="contactForm.name.$error" style="color:red" role="alert">
+                <div ng-if="contactForm.name.$error.required">You did not enter a field</div>
+                <div ng-if="contactForm.name.$error.minlength">Your field is too short</div>
+                <div ng-if="contactForm.name.$error.maxlength">Your field is too long</div>
             </div>
         </div>
 
@@ -25,7 +20,12 @@
                 <span class="input-group-addon">
                     <i class="fa fa-building-o"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Enterprise" id="enterprise" ng-model="$ctrl.contactInfo.company" ng-minlength="2" ng-maxlength="20"/>
+                <input type="text" class="form-control" placeholder="Enterprise" name="enterprise" ng-model="$ctrl.contactInfo.company" ng-minlength="2" ng-maxlength="20" />
+            </div>
+            <div ng-if="contactForm.enterprise.$error" style="color:red" role="alert">
+                <div ng-if="contactForm.enterprise.$error.required">You did not enter a field</div>
+                <div ng-if="contactForm.enterprise.$error.minlength">Your field is too short</div>
+                <div ng-if="contactForm.enterprise.$error.maxlength">Your field is too long</div>
             </div>
         </div>
     </div>
@@ -36,10 +36,11 @@
                 <span class="input-group-addon">
                     <i class="fa fa-at"></i>
                 </span>
-                <input type="email" class="form-control" placeholder="E-mail" id="email" ng-model="$ctrl.contactInfo.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/>
-              <!--  <span class="error-message" ng-show="contactInfo.email.$dirty
-        && contactInfo.email.$error.required">Must Enter An Email
-                </span>-->
+                <input type="email" class="form-control" placeholder="E-mail" name="email" ng-model="$ctrl.contactInfo.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+            </div>
+            <div ng-if="contactForm.email.$error" style="color:red" role="alert">
+                <div ng-if="contactForm.email.$error.required">You did not enter a field</div>
+                <div ng-if="contactForm.email.$error.pattern">Bad format</div>
             </div>
         </div>
 
@@ -48,10 +49,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-pencil"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Suject" id="" ng-model="$ctrl.contactInfo.subject" ng-required="true"/>
-              <!--  <span class="error-message" ng-show="contactInfo.subject.$dirty
-        && contactInfo.subject.$error.required">Must choose a Subject
-                </span>-->
+                <input type="text" class="form-control" placeholder="Suject" id="" ng-model="$ctrl.contactInfo.subject" ng-required="true" />
             </div>
         </div>
     </div>

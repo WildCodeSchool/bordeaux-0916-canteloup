@@ -9,14 +9,14 @@ body {
     //padding-top: 70px;
     background-color: $background;
     color: $text-default;
-    font-family: Lato ;
+    font-family: Lato;
 }
 /* form */
 .form {
     background: $white;
     padding: 20px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    margin: 0 1% 0 1%;
+    margin: 0 1%;
 }
 
 .sub-form {
@@ -37,15 +37,14 @@ body {
 }
 
 section > div.container {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-
 /* button */
-.btn,
-.input-group-addon,
-input {
-    border-radius: 20px;
-}
+// .btn,
+// .input-group-addon,
+// input {
+//     border-radius: 20px;
+// }
 
 .pagination > li > a {
     margin-right: 5px;
@@ -64,8 +63,10 @@ input {
 .form-control:focus {
     border-color: $primary;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px /*rgba(0, 181, 173, .6)*/;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px /*rgba(0, 181, 173, .6)*/;
+    /*rgba(0, 181, 173, .6)*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px;
+    /*rgba(0, 181, 173, .6)*/
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px;
 }
 /* checkbox */
 input[type=checkbox].css-checkbox {
@@ -92,71 +93,77 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 .css-label {
     background-image: url('../img/checkbox.png');
 }
+
 /* floating button */
-.btn-floating {
-    color: $white;
-    z-index: 1;
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    position: fixed;
-    line-height: 37px;
-    padding: 0;
-    font-size: 20px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
 
-.btn-floating.cancel {
-    margin-left: 40px;
-}
+// .btn-floating {
+//     color: $white;
+//     z-index: 1;
+//     width: 37px;
+//     height: 37px;
+//     border-radius: 50%;
+//     position: fixed;
+//     line-height: 37px;
+//     padding: 0;
+//     font-size: 20px;
+//     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+// }
+//
+// .btn-floating.cancel {
+//     margin-left: 40px;
+// }
+//
+// .btn-floating.top {
+//     top: 70px;
+// }
+//
+// .btn-floating.bottom {
+//     bottom: 55px;
+// }
 
-.btn-floating.top {
-    top: 70px;
-}
-
-.btn-floating.bottom {
-    bottom: 55px;
-}
 /* buttons */
-.btn,
-.btn:focus {
-    background-color:none ;
-    color: $primary;
-    text-shadow: none;
-    background-image: none;
-    border: $primary;
-}
 
-.btn:hover {
-    background-color: $primary;
-    color: $black;
-    text-shadow: none;
-}
+// .btn,
+// .btn:focus {
+//     background-color:none ;
+//     color: $primary;
+//     text-shadow: none;
+//     background-image: none;
+//     border: $primary;
+// }
+//
+// .btn:hover {
+//     background-color: $primary;
+//     color: $black;
+//     text-shadow: none;
+// }
+//
+// .btn.success {
+//     background-color: $green !important;
+// }
+//
+// .btn.success:hover {
+//     background-color: $green-dark !important;
+// }
+//
+// .btn.warning {
+//     background-color: $secondary !important;
+// }
+//
+// .btn.warning:hover {
+//     background-color: $secondary-dark !important;
+// }
+//
+// .btn.danger {
+//     background-color: $red !important;
+// }
+//
+// .btn.danger:hover {
+//     background-color: $red-dark !important;
+// }
 
-.btn.success {
-    background-color: $green !important;
-}
-
-.btn.success:hover {
-    background-color: $green-dark !important;
-}
-
-.btn.warning {
-    background-color: $secondary !important;
-}
-
-.btn.warning:hover {
-    background-color: $secondary-dark !important;
-}
-
-.btn.danger {
-    background-color: $red !important;
-}
-
-.btn.danger:hover {
-    background-color: $red-dark !important;
-}
 /* editor */
 .editable {
     background: $text-edit;
+    color: $white;
 }
