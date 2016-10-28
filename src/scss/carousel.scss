@@ -32,34 +32,44 @@
 
     .a {
         transform: rotateY(0deg) translateZ(250px);
-        background: url('/img/pictures/desk.jpg');
+        background: url('/img/pictures/office1.jpg');
         background-position: center;
         background-size: cover;
     }
 
     .b {
         transform: rotateY(60deg) translateZ(250px);
-        background: #0072bc;
+        background: url('/img/pictures/office2.jpg');
+        background-position: center;
+        background-size: cover;
     }
 
     .c {
         transform: rotateY(120deg) translateZ(250px);
-        background: #39b54a;
+        background: url('/img/pictures/office3.jpg');
+        background-position: center;
+        background-size: cover;
     }
 
     .d {
         transform: rotateY(180deg) translateZ(250px);
-        background: #f26522;
+        background: url('/img/pictures/office4.jpg');
+        background-position: center;
+        background-size: cover;
     }
 
     .e {
         transform: rotateY(240deg) translateZ(250px);
-        background: #630460;
+        background: url('/img/pictures/office5.jpg');
+        background-position: center;
+        background-size: cover;
     }
 
     .f {
         transform: rotateY(300deg) translateZ(250px);
-        background: #8c6239;
+        background: url('/img/pictures/office6.jpg');
+        background-position: center;
+        background-size: cover;
     }
 
     .next,
