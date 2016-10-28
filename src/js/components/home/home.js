@@ -3,8 +3,8 @@
     app.component("home", {
         templateUrl: 'js/components/home/home.html',
         controller: function($location, $anchorScroll){
-          this.gotoBottom = function(){
-            $location.hash('bottom')
+          this.gotofirstPart = function(){
+            $location.hash('firstPart')
             $anchorScroll()
           }
         }

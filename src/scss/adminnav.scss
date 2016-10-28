@@ -1,0 +1,18 @@
+@import 'colors';
+
+.nav-admin-edit{
+  .nav-pills>li.active>a {
+    color : $white;
+    background-color: $primary ;
+  }
+  a{
+    color : $primary
+  }
+  .fa{
+    font-size: 1.2em;
+  }
+
+  .nav-pills {
+    margin-left : 10%;
+  }
+}

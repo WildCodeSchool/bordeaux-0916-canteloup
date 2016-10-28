@@ -3,15 +3,12 @@
 /* Common */
 .normal_bloc{
   max-width: 800px;
-  margin-top : 5%;
 }
 .medium_bloc{
   max-width: 1000px;
 }
 .large_bloc{
   max-width : 100%;
-  margin-top : 5%;
-  margin-bottom : 5%;
 }
 
 strong {
@@ -20,12 +17,17 @@ strong {
 
 h1{
   text-align: center;
-  margin : 4% ;
+  margin : 10% ;
 }
 
 .black{
   background-color: $black;
   width:100%;
+}
+
+p{
+  text-align : justify;
+  margin : 5% 0 5% 0;
 }
 
 /* intro */
@@ -34,28 +36,27 @@ h1{
     background-image: url('/img/pictures/Visu-Home-TOP.png');
     background-position: bottom;
     background-size: cover;
-    min-height: 900px;
+  //  min-height: 900px;
     width : 100%;
+    height : auto;
     margin-bottom: 8%;
 }
+
 .logo-titre{
   margin : auto;
-  margin-top: 8%;
+  //margin-top: 8%;
 }
-
-// .intro-title {
-//     font-size: 50px;
-//     margin-top: 50px;
-//     color:$black;
-//     text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
-// }
 
 .intro-subtitle{
   font-family: Lato Light;
   color:$white;
   font-size: 1.2em;
   text-align: center;
-  padding: 10% 20% 0 20%;
+  padding: 0 20% 0 20%;
+}
+
+.icon_scroll{
+  margin-bottom: 20px;
 }
 
 /* Home content */
@@ -87,6 +88,7 @@ img.window{
 .subtitle {
   color:$white;
   font-size: 2em;
+  text-align: center;
 }
 
 /* bouttons */
