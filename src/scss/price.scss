@@ -57,38 +57,38 @@
   text-align: center;
   transition: all .2s ease-in-out;
 
-  @media screen and (min-width: 700px) {
-    & {
-      float: left;
-      width: 50%;
-    }
-    &:nth-child(odd) {
-      clear: left;
-    }
+  .pricingName {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $black;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 
-  @media screen and (min-width: 800px) {
-    & {
-      width: 33.3333333%;
-    }
-    &:nth-child(3n+1) {
-      clear: left;
-    }
-    &:nth-child(odd) {
-      clear: none;
-    }
+  .pricingPrice {
+    font-size: 1.5em;
+    letter-spacing: 0.0625em;
+    color: $black;
+    padding-bottom: 5px;
   }
 
-  @media screen and (min-width: 1120px) {
-    & {
-       width: 20%;
-    }
-    &:nth-child(odd), &:nth-child(3n+1) {
-       clear: none;
-    }
+  .pricingTime{
+    font-size: 1.2em;
+    color: $black;
+    padding-bottom: 10px;
+    text-align: center;
   }
 
+  .info {
+    font-size: 1em;
+    color : $white;
+    text-align: center;
+    list-style-type: none;
+    line-height: 0.8em;
+  }
 }
+
 .grid:hover {
   background-color: $dark-gray;
   border-top: 2px solid $primary;
@@ -112,43 +112,4 @@
   &:after {
     right: -2px;
   }
-  
-}
-h2.info, h3.info, p.info, ul.info {
-  margin: 0
-}
-h2.info {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0 0 0.5em;
-}
-h3.info {
-  font-size: 1.5em;
-  letter-spacing: 0.0625em;
-  margin: 0 0 0.3333333333333333em;
-}
-p.info {
-  font-size: 1em;
-}
-p.info, ul.info {
-  margin:0 0 1.5em
-}
-ul .info {
-  color: $gray;
-  font-size: 0.9em;
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-
-  li .info {
-    margin: 0 0 0.8333333333333333em;
-    text-align: 0px;
-  }
-}
-
-.uppercase, h2.info {
-  text-transform: uppercase;
-}
-sup, .small {
-  font-size: 0.6125em;
 }

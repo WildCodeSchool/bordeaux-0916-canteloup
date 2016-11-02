@@ -1,7 +1,13 @@
 <div class="nav-admin-edit">
-<ul class="nav nav-pills">
-  <li role="edition" class="active"><a href="#" class="fa fa-pencil"> Editer</a></li>
-  <li role="edition"><a href="#" class="fa fa-check">Valider</a></li>
-  <li role="edition"><a href="#" class="fa fa-remove">Annuler</a></li>
-</ul>
+    <a ng-click="$ctrl.editMode = !$ctrl.editMode" ng-if="!$ctrl.editMode">
+      <i href="#" class="fa fa-pencil"></i>
+    </a>
+    <div class="nav nav-pills" ng-if="$ctrl.editMode">
+      <a ng-click="$ctrl.save()">
+          <i class="fa fa-check"></i>
+      </a>
+      <a ng-click="$ctrl.cancel()">
+          <i class="fa fa-remove"></i>
+      </a>
+    </div>
 </div>
