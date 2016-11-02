@@ -14,7 +14,22 @@
 
 /* prices table */
 
-.pricingTable{ background-color: $dark-gray;}
+.pricingTable{
+  background-color: $dark-gray;
+
+  .pricingTable{
+    color: $white;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    min-height: 100%;
+    line-height: 1.5;
+    padding: 2.5em 0;
+  }
+
+.priceForm{
+  padding : 0px;
+}
+
 
 // table {
 //   border-collapse: collapse;
@@ -35,6 +50,8 @@
 //   }
 // }
 
+}
+
 /* screen*/
 
 @media (max-width: 600px){
@@ -47,22 +64,4 @@
   .pull-left{
     display : none;
   }
-}
-
-/* prix */
-
-
-.pricingTable{
-  color: $white;
-  font-family: 'Lato', sans-serif;
-  font-size: 100%;
-  min-height: 100%;
-  line-height: 1.5;
-  padding: 2.5em 0;
-}
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
