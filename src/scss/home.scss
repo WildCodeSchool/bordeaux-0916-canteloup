@@ -78,28 +78,50 @@ img.window{
 .headers {
     background-position: bottom;
     background-size: cover;
-    min-height: 500px;
+    min-height: 450px;
     margin-bottom: 10px;
+
+    h1{
+      margin-top : 15%;
+      color : $white;
+      text-transform: uppercase;
+      font-family: Lato ;
+      font-weight : 200;
+      font-size: 3em;
+      margin-bottom : 5%;
+    }
+
+    span{
+      font-weight : 800;
+    }
+
+    .redline{
+      margin : auto;
+    }
 }
 
 .headers_history{
-  background-image: url('../img/pictures/visu-top-history.jpg');
+  background-image: url('/img/pictures/visu-top-history.png');
 }
 
 .headers_tarifs{
-  background-image: url('../img/pictures/visu-top-tarifs.jpg');
+  background-image: url('/img/pictures/visu-top-tarifs.png');
 }
 
 .headers_coworkers{
-  background-image: url('../img/pictures/visu-top-coworkers.jpg');
+  background-image: url('/img/pictures/visu-top-coworkers.png');
 }
 
 .headers_events{
-  background-image: url('../img/pictures/visu-top-events.jpg');
+  background-image: url('/img/pictures/visu-top-events.png');
 }
 
 .headers_contact{
-  background-image: url('../img/pictures/visu-top-contact.jpg');
+  background-image: url('/img/pictures/visu-top-contact.png');
+}
+
+.headers_admin{
+  background-image: url('/img/pictures/visu-top-admin.png');
 }
 
 .intro-title {
@@ -123,7 +145,7 @@ img.window{
   text-align: center;
   text-transform: uppercase;
   padding : 10px;
-  border-radius : 20px;
+  border-radius : 25px;
   margin-bottom: 60px;
   margin-top : 30px;
   background-color: $primary;

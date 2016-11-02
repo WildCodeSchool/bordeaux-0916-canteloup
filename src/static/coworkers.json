@@ -1,0 +1,45 @@
+[
+  {
+    "name ": "Apperture" ,
+    "slogan" : "Innnovation 3D interactive",
+    "resume" : " ",
+    "image" : "/img/logos/visu-Apperture.png",
+    "urllink" : "http://www.apperture.fr/"
+  },{
+    "name ": "3Prime" ,
+    "slogan" : "Votre agence digitale santé",
+    "resume" : " ",
+    "image" : "/img/logos/visu-3Prime.png",
+    "urllink" : "https://www.troisprime.com/"
+  },{
+    "name ": "Wild Code School" ,
+    "slogan" : "Apprends à code sans chaussures",
+    "resume" : " ",
+    "image" : "/img/logos/visu-AEC.png",
+    "urllink" : "http://www.wildcodeschool.fr/"
+  },{
+    "name ": "Lourse" ,
+    "slogan" : "Studio de communication",
+    "resume" : " ",
+    "image" : "/img/logos/visu-Lourse.png",
+    "urllink" : "http://www.lourse-communication.com/"
+  },{
+    "name ": "HORIZONS immobilier" ,
+    "slogan" : "Transaction immobilière et administration de biens",
+    "resume" : " ",
+    "image" : "/img/logos/visu-horizon.png",
+    "urllink" : "http://www.horizons-immobilier.com/"
+  },{
+    "name ": "DEVISUBOX" ,
+    "slogan" : "Haute technologie numérique",
+    "resume" : " ",
+    "image" : "/img/logos/visu-devisubox.png",
+    "urllink" : "http://www.devisubox.com/fr/"
+  },{
+    "name ": "AEC" ,
+    "slogan" : "Audit Expertise Conseil",
+    "resume" : " ",
+    "image" : "/img/logos/visu-AEC.png",
+    "urllink" : "http://www.aeconseil.fr/"
+  }
+]

@@ -1,24 +1,11 @@
 @import 'colors';
 
-/* plan */
-
-// .space-plan {
-//   margin-top : 5px;
-//   margin-bottom : 5px;
-//   background-image: url(../img/plan/plan2.png);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   // height: 100%;
-//   // width: 100%
-//   }
-
 /* prices table */
 
 .pricingTable{
-  background-color: $dark-gray;
 
   .pricingTable{
-    color: $white;
+    color: $gray;
     font-family: 'Lato', sans-serif;
     font-size: 100%;
     min-height: 100%;
@@ -30,29 +17,13 @@
   padding : 0px;
 }
 
-
-// table {
-//   border-collapse: collapse;
-//   border : solid 2px;
-//   width : 100%;
-//   text-align: center;
-//   line-height: 3;
-//
-//   th {
-//     text-align: center;
-//     border : solid 2px;
-//   }
-//
-//   td {
-//     border : none;
-//     width : 25%;
-//     border-right : solid 2px;
-//   }
-// }
-
 }
 
 /* screen*/
+
+.medium2_bloc{
+  max-width: 1200px;
+}
 
 @media (max-width: 600px){
   .container-fluid{
