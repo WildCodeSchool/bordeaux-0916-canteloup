@@ -20,17 +20,17 @@
                             "transform": "rotateY(" + currdeg + "deg)"
                         });
 
-                    }, 5000);
+                    }, 2000);
                 },
                 $onDestroy() {
                     $interval.cancel(this.interval);
                 },
                 rotate(direction) {
-                    if (direction === "n") {
-                        currdeg === currdeg - 60;
+                    if (direction == "n") {
+                        currdeg == currdeg - 60;
                     }
-                    if (direction === "p") {
-                        currdeg === currdeg + 60;
+                    if (direction == "p") {
+                        currdeg == currdeg + 60;
                     }
                     carousel.css({
                         "-webkit-transform": "rotateY(" + currdeg + "deg)",
