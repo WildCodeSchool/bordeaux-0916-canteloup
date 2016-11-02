@@ -5,26 +5,39 @@
           <p class="subtitle text">à l'atelier Canteloup</p>
       </div>
   </div>
-<adminnav/>
+  <adminnav/>
   <div class="container normal_bloc">
 
     <form name="connectForm" class="container-fluid" >
 
         <div class="row ">
             <div class="col-xs-offset-4 col-xs-4">
+              <div class="form-group input-group">
+                  <span class="input-group-addon">
+                      <i class="fa fa-user"></i>
+                  </span>
                 <input name="identifiant" type="text" class="form-control" placeholder="Identifiant" id="id_AC"/>
             </div>
           </div>
+        <div>
 
           <div class="row ">
             <div class="col-xs-offset-4 col-xs-4">
+              <div class="form-group input-group">
+                  <span class="input-group-addon">
+                      <i class="fa fa-lock"></i>
+                  </span>
                 <input name="password" type="password" class="form-control" placeholder="Mot de passe" id="pw_AC" />
             </div>
         </div>
+      </div>
 
-        <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default btn1" > Envoyer </button>
+        <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default connect" > Se connecter </button>
 
     </form>
+
+
+    <button class="col-xs-offset 4 col-xs-4 btn-default disconect" > Se déconnecter </button>
 
   </div>
 </section>

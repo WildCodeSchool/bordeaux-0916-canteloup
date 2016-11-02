@@ -33,7 +33,7 @@ p{
 /* intro */
 
 .intro {
-    background-image: url('/img/pictures/Visu-Home-TOP.png');
+    background-image: url('/img/pictures/visu-top-home.png');
     background-position: bottom;
     background-size: cover;
   //  min-height: 900px;
@@ -67,17 +67,41 @@ img.window{
 
 .img_backgroung_logo{
   background-image: url(/img/pictures/visu-background-coworkers.png);
+
+  .center-block {
+      text-align: left;
+  }
 }
 
 /* intro other pages */
 
 .headers {
-    background-image: url('../img/pictures/openspaceNB.jpg');
     background-position: bottom;
     background-size: cover;
     min-height: 500px;
     margin-bottom: 10px;
 }
+
+.headers_history{
+  background-image: url('../img/pictures/visu-top-history.jpg');
+}
+
+.headers_tarifs{
+  background-image: url('../img/pictures/visu-top-tarifs.jpg');
+}
+
+.headers_coworkers{
+  background-image: url('../img/pictures/visu-top-coworkers.jpg');
+}
+
+.headers_events{
+  background-image: url('../img/pictures/visu-top-events.jpg');
+}
+
+.headers_contact{
+  background-image: url('../img/pictures/visu-top-contact.jpg');
+}
+
 .intro-title {
     font-size: 4em;
     margin-top: 80px;
@@ -85,6 +109,7 @@ img.window{
     //text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
     margin-bottom: 80px;
 }
+
 .subtitle {
   color:$white;
   font-size: 2em;
