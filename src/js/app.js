@@ -51,6 +51,7 @@
     'InlineTextEditor',
     'textAngular',
     'pascalprecht.translate',
+    'ngParallax',
     'app.views',
     'app.config',
     'app.services',
@@ -62,4 +63,5 @@
     'app.contact',
     'app.events',
     'app.admin'
-]))
+
+  ]))
