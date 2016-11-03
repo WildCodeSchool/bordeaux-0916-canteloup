@@ -2,18 +2,12 @@
 /*  */
 .container_ac {
     padding: 0;
-    margin-top: 10%;
+    margin-top: 4%;
     width: 80%;
     //height: 520px;
     border-radius: 5px;
     box-shadow: 0 0 50px $light-gray;
     max-width : 1300px;
-}
-
-.row_ac {
-    //white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .h2_ac {
@@ -37,7 +31,7 @@
 .p_ac {
     //margin: 5% 0 5% 39%;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.1em;
     max-height: 300px;
     //white-space: nowrap;
     overflow: hidden;
@@ -54,6 +48,10 @@
   margin-bottom : 40px;
   margin-top : 20px;
   padding : 0;
+}
+
+.p_ac_events{
+    height : 300px;
 }
 
 @media (min-width: 992px) {

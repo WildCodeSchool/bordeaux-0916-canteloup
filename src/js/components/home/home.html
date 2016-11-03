@@ -3,6 +3,7 @@
         <videos autoplay />
         <img src="/img/icons/logo-home-top.png" class="logo-titre center-block img-responsive">
         <div class="container text-center">
+            <img class="img-responsive redline" src="/img/icons/line.png">
             <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
         </div>
         <div class="icon-scroll container text-center">
@@ -13,8 +14,7 @@
 
     <a id="firstPart"></a><div class="container normal_bloc">
 
-         <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head1"> <strong> Histoire </strong> de l'atelier Canteloup {{$ctrl.page.content.head1}}</h1>
-
+        <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head1"> <strong> Histoire </strong> de l'atelier Canteloup {{$ctrl.page.content.head1}}</h1>
         <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{$ctrl.page.content.para2}}</p>
 
@@ -66,46 +66,50 @@
 
     </div>
 
-<div ng-parallax pattern="'/img/pictures/visu-background-coworkers.png'" speed="2" reverse="false"  class="container black img_backgroung_logo">
-    <div class="container img_backgroung_logo">
+    <div ng-parallax pattern="'/img/pictures/visu-background-coworkers.png'" speed="2" reverse="false"  class="container black img_backgroung_logo">
+        <div class="container img_backgroung_logo">
 
-          <div class="row">
-              <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
-                  <img src="/img/logos/Apperture-couleurs.png" alt="" class="center-block" />
-              </div>
-              <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
-                  <img src="/img/logos/Lourse.png" alt="" class="center-block" />
-              </div>
-              <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
-                  <img src="/img/logos/3prime.png" alt="" class="center-block" />
-              </div>
-          </div>
+          <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head4"> Nos <strong> Coworkers </strong> {{$ctrl.page.content.head4}}</h1>
 
-          <div class="row">
-              <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
-                  <img src="/img/logos/Devisubox-couleurs.png" alt="" class="center-block" />
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
+                      <img src="/img/logos/Apperture-couleurs.png" alt="" class="center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/Lourse.png" alt="" class="center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/3prime.png" alt="" class="center-block" />
+                  </div>
               </div>
-              <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
-                  <img src="/img/logos/Elsie.png" alt="" class="center-block" />
-              </div>
-              <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
-                  <img src="/img/logos/PopcornFX.png" alt="" class="center-block" />
-              </div>
-          </div>
 
-          <div class="row">
-              <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
-                  <img src="/img/logos/Horizons.png" alt="" class="center-block" />
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
+                      <img src="/img/logos/Devisubox-couleurs.png" alt="" class="center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/Elsie.png" alt="" class="center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/PopcornFX.png" alt="" class="center-block" />
+                  </div>
               </div>
-              <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
-                  <img src="/img/logos/WCS.png" alt="" class="center-block" />
+
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
+                      <img src="/img/logos/Horizons.png" alt="" class="center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/WCS.png" alt="" class="center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/AEC.png" alt="" class="center-block" />
+                  </div>
               </div>
-              <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
-                  <img src="/img/logos/AEC.png" alt="" class="center-block" />
-              </div>
-          </div>
+
+              <a ui-sref="app.tarifs" class="col-xs-offset-4 col-xs-4 btn-default"> Consulter nos tarifs </a>
+        </div>
     </div>
-</div>
 
     <div class="container normal_bloc">
 

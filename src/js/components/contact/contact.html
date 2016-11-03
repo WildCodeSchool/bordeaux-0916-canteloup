@@ -14,7 +14,31 @@
   </div>
   <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page"/>
 
-    <a id="firstPart"></a><div class="container large_bloc">
+    <a id="firstPart"></a><div class="container-fluid normal_bloc text-justify">
+        <div class="row">
+          <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> <strong>Titre</strong> du paragraphe {{$ctrl.page.content.head2}}</h1>
+          <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2">{{$ctrl.page.content.para2}}</p>
+        </div>
+        <div class="row contact_ac">
+            <img class="col-xs-2 col-md-offset-1 col-md-1" src="/img/icons/picto-adresse.png">
+            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3" class="col-xs-10 col-md-4"> 15, Place Canteloup, 33800 Bordeaux </br>
+            (s'engager dans la Brasserie du </br>Passage Saint-Michel - 1er étage){{$ctrl.page.content.para3}}</p>
+            <div class="col-xs-12 col-md-offset-1 col-md-5 contact_ac_email">
+              <div class="row">
+                <img class="col-xs-6 col-md-offset-1 col-md-2 picto_adresse" src="/img/icons/picto-mail.png">
+                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4" class="col-xs-8 col-md-11 col-md-6"> contact@adressemail.com{{$ctrl.page.content.para4}}</p>
+              </div>
+              <div class="row">
+                <img class="col-xs-6 col-md-offset-1 col-md-2 picto_adresse" src="/img/icons/picto-tel.png">
+                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para5" class="col-xs-8 col-md-11 col-md-6"> +33 9 80 34 37 58{{$ctrl.page.content.para5}}</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container large_bloc">
         <map/>
     </div>
 
