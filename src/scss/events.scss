@@ -4,13 +4,14 @@
     padding: 0;
     margin-top: 10%;
     width: 80%;
-    height: 410px;
+    //height: 520px;
     border-radius: 5px;
-    box-shadow: 0 0 30px $gray;
+    box-shadow: 0 0 50px $light-gray;
+
+    max-width : 1300px;
 }
 
 .row_ac {
-    max-height: 410px;
     //white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -18,26 +19,58 @@
 
 .h2_ac {
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 5% 0;
     color: $primary;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 10px;
+    padding: 0 5% 0 5%;
 }
 
 .h3_ac {
-    font-size: 1.4em;
-    margin-top: 0;
+    font-size: 1.8em;
+    margin-top: 10px;
     padding-top: 0;
+    color : $gray;
+    padding: 0 5% 0 5%;
 }
 
 .p_ac {
     //margin: 5% 0 5% 39%;
     text-align: justify;
-    margin-right: 5%;
-    font-size: 1em;
+    font-size: 1.2em;
+    max-height: 300px;
+    //white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5% 5% 5% 0;
+    padding: 0 0 5% 5%;
 }
 
-.offfice2 {
-    height: 400px;
+.img_ac {
+    height: 100%;
+}
+.btn_ac {
+  margin-bottom : 40px;
+  margin-top : 20px;
+  padding : 0;
+}
+@media (min-width: 992px) {
+
+  .container_ac {
+      height: 520px;
+      max-width : 1300px;
+  }
+
+.h2_ac, .h3_ac, .p_ac {padding: 0;}
+
+  .p_ac {
+      max-height: 260px;
+      //white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 5% 5% 0 0;
+  }
+
+
 }
