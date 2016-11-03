@@ -19,16 +19,15 @@
       <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2"> Lorem ipsum dolor sit amet {{$ctrl.page.content.p2}}</p>
     </div>
 
-    <div class="container container_ac container_ac_coworkers">
-    <div class="row row_ac">
-        <img class="col-xs-12 col-md-4 img_ac " src="img/visu/visu-Apperture.png"/>
+    <div class="container container_ac container_ac_coworkers" ng-repeat="coworker in $ctrl.coworkers">
+    <div class="row row_ac" >
+        <img ng-src="/img/logos/{{coworker.image}}" class="col-xs-12 col-md-4 img_ac" />
         <div class="col-xs-12 col-md-8">
-            <h2 class="h2_ac">Apperture</h2>
-            <h3 class="h3_ac">Innovation 3D interactive</h3>
-            <p class="p_ac p_ac_coworkers">Apperture est spécialisée dans le développement de contenu 3D interactif en temps réel de haute qualité, notamment dans le domaine de la réalité virtuelle, réalité augmentée, applications desktop et mobiles.</br> Nous accompagnons les entreprises dans la conception et le déploiement de solutions 3D interactives pouvant impacter toutes les étapes de la vie d’un produit : design de prototype, simulation et visualisation de données 3D, formation des collaborateurs, mais également pour l’évènementiel et le support à la vente.</br> Si vous souhaitez offrir un autre regard sur vos projets, dépasser les limites visuelles de notre monde ou immerger vos partenaires et clients dans une nouvelle expérience émotionnelle marquante, nous avons sûrement une solution.
-              </p>
+            <h2 class="h2_ac">{{coworker.company}}</h2>
+            <h3 class="h3_ac">{{coworker.slogan}}</h3>
+            <p class="p_ac p_ac_coworkers">{{coworker.resume}}</p>
         </div>
-        <a href="http://www.apperture.fr/" class="col-xs-offset-3 col-xs-7 col-sm-offset-5 col-sm-2 btn-default btn_ac"> Voir le site web </a>
+        <a href= {{"coworker.urllink"}} class="col-xs-offset-3 col-xs-7 col-sm-offset-5 col-sm-2 btn-default btn_ac"> Voir le site web </a>
     </div>
     </div>
 
