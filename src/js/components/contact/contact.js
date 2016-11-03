@@ -1,6 +1,16 @@
 ((app) => {
     'use strict'
     app.component("contact", {
-        templateUrl: 'js/components/contact/contact.html'
+        bindings: {
+            editMode: "<",
+            ngModel: "="
+        },
+        templateUrl: 'js/components/contact/contact.html',
+        controller: angular.extend(this, {
+            page: {
+                name: 'contact',
+                content: ''
+            }
+        })
     })
 })(angular.module('app.contact'));

@@ -15,14 +15,14 @@
     </div> -->
 
     <div class="grid">
-      <h2 class="info">Nom formule</h2>
-      <h3 class="info"><span class="uppercase">Prix</span></h3>
-      <pclass="info">Durée de location</p>
+      <h2 class="info" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.head1">Nom formule{{$ctrl.ngModel.price.head1}}</h2>
+      <h3 class="info"><span class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.span1">Prix{{$ctrl.ngModel.price.span1}}</span></h3>
+      <p class="info" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.para1">Durée de location</p>
       <ul class="info">
-        <li class="info">Email Support</li>
-        <li class="info">Phone Support</li>
-        <li class="info">Dedicated Environment</li>
-        <li class="info">Customized Plan</li>
+        <li class="info" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.li1">Email Support{{$ctrl.ngModel.price.li1}}</li>
+        <li class="info" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.li2">Phone Support{{$ctrl.ngModel.price.li2}}</li>
+        <li class="info" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.li3">Dedicated Environment{{$ctrl.ngModel.price.li3}}</li>
+        <li class="info" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.li4">Customized Plan{{$ctrl.ngModel.price.li4}}</li>
       </ul>
       <a ui-sref="app.contact" class="col-xs-offset-3 col-xs-6 col-sm-offset-4 col-sm-4 btn-default"> Sign Up </a>
     </div>
