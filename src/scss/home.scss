@@ -17,7 +17,7 @@ strong {
 
 h1{
   text-align: center;
-  margin : 10% ;
+  margin : 10% 10% 5% 10%;
 }
 
 .black{
@@ -33,7 +33,7 @@ p{
 /* intro */
 
 .intro {
-    background-image: url('/img/pictures/Visu-Home-TOP.png');
+    background-image: url('/img/pictures/visu-top-home.png');
     background-position: bottom;
     background-size: cover;
   //  min-height: 900px;
@@ -44,7 +44,8 @@ p{
 
 .logo-titre{
   margin : auto;
-  //margin-top: 8%;
+  width : 25%;
+  margin-top: 5%;
 }
 
 .intro-subtitle{
@@ -56,7 +57,7 @@ p{
 }
 
 .icon_scroll{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Home content */
@@ -67,17 +68,63 @@ img.window{
 
 .img_backgroung_logo{
   background-image: url(/img/pictures/visu-background-coworkers.png);
+
+  .center-block {
+      text-align: left;
+  }
 }
 
 /* intro other pages */
 
 .headers {
-    background-image: url('../img/pictures/openspaceNB.jpg');
     background-position: bottom;
     background-size: cover;
-    min-height: 500px;
+    min-height: 450px;
     margin-bottom: 10px;
+
+    h1{
+      margin-top : 15%;
+      color : $white;
+      text-transform: uppercase;
+      font-family: Lato ;
+      font-weight : 200;
+      font-size: 3em;
+      margin-bottom : 5%;
+    }
+
+    span{
+      font-weight : 800;
+    }
+
+    .redline{
+      margin : auto;
+    }
 }
+
+.headers_history{
+  background-image: url('/img/pictures/visu-top-history.png');
+}
+
+.headers_tarifs{
+  background-image: url('/img/pictures/visu-top-tarifs.png');
+}
+
+.headers_coworkers{
+  background-image: url('/img/pictures/visu-top-coworkers.png');
+}
+
+.headers_events{
+  background-image: url('/img/pictures/visu-top-events.png');
+}
+
+.headers_contact{
+  background-image: url('/img/pictures/visu-top-contact.png');
+}
+
+.headers_admin{
+  background-image: url('/img/pictures/visu-top-admin.png');
+}
+
 .intro-title {
     font-size: 4em;
     margin-top: 80px;
@@ -85,6 +132,7 @@ img.window{
     //text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
     margin-bottom: 80px;
 }
+
 .subtitle {
   color:$white;
   font-size: 2em;
@@ -98,7 +146,7 @@ img.window{
   text-align: center;
   text-transform: uppercase;
   padding : 10px;
-  border-radius : 20px;
+  border-radius : 25px;
   margin-bottom: 60px;
   margin-top : 30px;
   background-color: $primary;

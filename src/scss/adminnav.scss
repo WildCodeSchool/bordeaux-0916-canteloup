@@ -1,18 +1,22 @@
 @import 'colors';
 
 .nav-admin-edit{
-  .nav-pills>li.active>a {
-    color : $white;
-    background-color: $primary ;
-  }
-  a{
-    color : $primary
-  }
-  .fa{
-    font-size: 1.2em;
-  }
+  position: fixed;
+  top: 80px;
+  right: 40px;
 
-  .nav-pills {
-    margin-left : 10%;
-  }
+  padding: 10px;
+  z-index: 99999999;
+
+
+  .fa{
+   font-size: 2.5em;
+   color : $primary ;
+   margin-left : 15px;
+   }
+
+  // .nav-pills {
+  //   margin-left : 10%;
+  //
+  // }
 }
