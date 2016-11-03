@@ -8,6 +8,9 @@ footer {
         li {
             text-align: center;
             list-style-type: none;
+            a:hover{
+              color:white;
+            }
         }
     }
 }
@@ -30,6 +33,20 @@ footer {
     height: 3rem;
     margin-top: 2px;
 }
+
+.flink{
+  color:#727272;
+}
+@media (min-width: 20px ) and (max-width: 992px) {
+.footer-logo {
+    max-height: 10rem;
+    max-width: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin: auto;
+ }
+}
+
 
 /*.imgwrapper {
    width: 80%;

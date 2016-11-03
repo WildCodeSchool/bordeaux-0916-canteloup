@@ -27,11 +27,18 @@
                 save() {
                     PageService.save(Object.assign({}, this.ngModel)).then((res) => {
                         this.editMode = false
+                        toastr.success("Sauvegardé !", "Edition")
                     })
                 },
                 cancel() {
                     this.editMode = false
                     this.ngModel = this.initialData
+                },
+                disconnect(){
+                  UserService.disconnect().then(()=>{
+                    this.user = null
+                    toastr.success("Vous êtes déconnecté", "Connection")
+                  })
                 }
             })
         }

@@ -10,7 +10,7 @@
             angular.extend(this, {
                 page: {
                     name: 'history',
-                    content: ''
+                    content: ""
                 }
             })
             this.gotofirstPart = function() {

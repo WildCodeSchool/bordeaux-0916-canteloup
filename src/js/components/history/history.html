@@ -6,13 +6,13 @@
         </div>
         <div class="container text-center">
             <img class="img-responsive redline" src="/img/icons/line.png">
-            <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. {{$ctrl.page.content.para1}}</p>
+            <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
         </div>
         <div class="icon-scroll container text-center">
             <a ng-click="$ctrl.gotofirstPart()"><img class="icon_scroll" src="/img/icons/icon_scroll.png" /></a>
         </div>
     </div>
-    <adminnav/>
+    <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page"/>
 
     <a id="firstPart"></a><div class="container normal_bloc">
         <div>

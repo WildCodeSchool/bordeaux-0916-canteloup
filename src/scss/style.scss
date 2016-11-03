@@ -11,6 +11,10 @@ body {
     color: $text-default;
     font-family: Lato;
 }
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
 /* form */
 .form {
     background: $white;
@@ -164,6 +168,7 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 
 /* editor */
 .editable {
+    min-height: 25px;
     background: $text-edit;
     color: $white;
 }

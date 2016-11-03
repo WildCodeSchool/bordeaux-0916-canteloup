@@ -1,8 +1,8 @@
-<div class="nav-admin-edit">
+<div class="nav-admin-edit" ng-if="$ctrl.user.isAdmin">
     <a ng-click="$ctrl.editMode = !$ctrl.editMode" ng-if="!$ctrl.editMode">
-      <i href="#" class="fa fa-pencil"></i>
+      <i class="fa fa-pencil"></i>
     </a>
-    <a ng-click="$ctrl.disconnect = !$ctrl.connect" ng-if="!$ctrl.editMode">
+    <a ng-click="$ctrl.disconnect()" ng-if="!$ctrl.editMode">
       <i class="fa fa-sign-out"></i>
     </a>
     <div class="nav nav-pills" ng-if="$ctrl.editMode">
