@@ -1,3 +1,43 @@
 @import 'colors';
-
 /*  */
+.container_ac {
+    padding: 0;
+    margin-top: 10%;
+    width: 80%;
+    height: 410px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px $gray;
+}
+
+.row_ac {
+    max-height: 410px;
+    //white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.h2_ac {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: 5% 0;
+    color: $primary;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.h3_ac {
+    font-size: 1.4em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.p_ac {
+    //margin: 5% 0 5% 39%;
+    text-align: justify;
+    margin-right: 5%;
+    font-size: 1em;
+}
+
+.offfice2 {
+    height: 400px;
+}
