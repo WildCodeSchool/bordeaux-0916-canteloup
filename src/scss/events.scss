@@ -7,7 +7,6 @@
     //height: 520px;
     border-radius: 5px;
     box-shadow: 0 0 50px $light-gray;
-
     max-width : 1300px;
 }
 
@@ -50,11 +49,13 @@
 .img_ac {
     height: 100%;
 }
+
 .btn_ac {
   margin-bottom : 40px;
   margin-top : 20px;
   padding : 0;
 }
+
 @media (min-width: 992px) {
 
   .container_ac {
@@ -62,7 +63,7 @@
       max-width : 1300px;
   }
 
-.h2_ac, .h3_ac, .p_ac {padding: 0;}
+  .h2_ac, .h3_ac, .p_ac {padding: 0;}
 
   .p_ac {
       max-height: 260px;
@@ -71,6 +72,5 @@
       text-overflow: ellipsis;
       margin: 5% 5% 0 0;
   }
-
 
 }
