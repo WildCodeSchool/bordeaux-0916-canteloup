@@ -1,6 +1,18 @@
 ((app) => {
     'use strict'
     app.component("videos", {
-        templateUrl: 'js/components/common/video.html'
+        bindings: {
+            editMode: "<",
+            ngModel: "="
+        },
+        templateUrl: 'js/components/common/video.html',
+        controller: function() {
+            angular.extend(this, {
+                page: {
+                    name: 'videos',
+                    content: ''
+                }
+            })
+        }
     })
 })(angular.module('app.common'))

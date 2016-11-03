@@ -1,6 +1,10 @@
 ((app) => {
     'use strict'
     app.component("map", {
+        bindings: {
+            editMode: "<",
+            ngModel: "="
+        },
         templateUrl: 'js/components/common/map.html',
         controller: [function() {
             angular.extend(this, {

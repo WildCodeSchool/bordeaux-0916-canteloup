@@ -15,15 +15,20 @@
 
         <div class="row ">
             <div class="col-xs-offset-4 col-xs-4">
+<<<<<<< HEAD
               <div class="form-group input-group">
                   <span class="input-group-addon">
                       <i class="fa fa-user"></i>
                   </span>
                 <input name="identifiant" type="text" class="form-control" placeholder="Identifiant" id="id_AC"/>
               </div>
+=======
+                <input name="identifiant" type="text" class="form-control" placeholder="Identifiant" id="id_AC" ng-model="$ctrl.user.email"/>
+>>>>>>> contact
             </div>
         <div>
 
+<<<<<<< HEAD
         <div class="row ">
           <div class="col-xs-offset-4 col-xs-4">
             <div class="form-group input-group">
@@ -31,13 +36,23 @@
                     <i class="fa fa-lock"></i>
                 </span>
               <input name="password" type="password" class="form-control" placeholder="Mot de passe" id="pw_AC" />
+=======
+          <div class="row ">
+            <div class="col-xs-offset-4 col-xs-4">
+                <input name="password" type="password" class="form-control" placeholder="Mot de passe" id="pw_AC" ng-model="$ctrl.user.password"/>
+>>>>>>> contact
             </div>
           </div>
         </div>
 
+<<<<<<< HEAD
         <div class="row ">
               <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default connect" > Se connecter </button>
         </div>
+=======
+        <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default btn1"  ng-click="$ctrl.connect()" > Envoyer </button>
+
+>>>>>>> contact
     </form>
     
   </div>

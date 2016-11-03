@@ -1,14 +1,19 @@
 ((app) => {
     'use strict'
     app.component("navbar", {
-        templateUrl: 'js/components/common/navbar.html',
         bindings: {
+            editMode: "<",
+            ngModel: "=",
             user: '<'
         },
-        controller: [function() {
+        templateUrl: 'js/components/common/navbar.html',
+        controller: function() {
             angular.extend(this, {
-
+                page: {
+                    name: 'navbar',
+                    content: ''
+                }
             })
-        }]
+        }
     })
 })(angular.module('app.common'))
