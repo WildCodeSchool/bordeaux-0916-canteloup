@@ -1,10 +1,6 @@
 ((app) => {
     'use strict'
     app.component("admin", {
-        bindings: {
-            editMode: "<",
-            ngModel: "="
-        },
         templateUrl: 'js/components/admin/admin.html',
         controller: function(UserService, $state) {
             angular.extend(this, {
@@ -30,10 +26,6 @@
                     }).catch(() => {
                         toastr.error('Veuillez actualiser la page', 'Erreur');
                     })
-                },
-                page: {
-                    name: 'home',
-                    content: {}
                 }
             })
         }

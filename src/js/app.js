@@ -63,5 +63,4 @@
     'app.contact',
     'app.events',
     'app.admin'
-
   ]))
