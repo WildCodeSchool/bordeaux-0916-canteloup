@@ -24,4 +24,4 @@
         }
 
     }])
-})(angular.module('app.tarifs'))
+})(angular.module('app.services'))

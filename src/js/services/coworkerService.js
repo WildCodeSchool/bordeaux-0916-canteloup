@@ -1,6 +1,6 @@
 ((app) => {
     'use strict'
-    app.service('coworkersService', ['$http', class coworkers {
+    app.service('coworkersService', ['$http', class coworkersService {
 
         constructor($http) {
             this.$http = $http
@@ -24,4 +24,4 @@
         }
 
     }])
-})(angular.module('app.coworkers'))
+})(angular.module('app.services'))

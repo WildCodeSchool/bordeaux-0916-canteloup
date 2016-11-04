@@ -21,11 +21,11 @@
 
     <div class="container container_ac container_ac_coworkers" ng-repeat="coworker in $ctrl.coworkers">
     <div class="row row_ac" >
-      <div class="col-xs-12 col-md-4 img_ac"  ng-style="{'background-image':url('img/visu/{{coworker.image}}')}">
-
+      <div class="col-xs-12 col-md-4 img_ac">
+        <img ng-style="{'background-image':url('img/visu/{{coworker.image}}')}" class="col-xs-12 col-md-4 img_ac" />
       </div>
 
-        <!-- <img ng-src="img/visu/{{coworker.image}}" class="col-xs-12 col-md-4 img_ac" /> -->
+        <!--  ng-src="img/visu/{{coworker.image}}"-->
 
       <div class="col-xs-12 col-md-8">
             <h2 class="h2_ac">{{coworker.company}}</h2>

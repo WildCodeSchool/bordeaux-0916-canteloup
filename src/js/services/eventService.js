@@ -24,4 +24,4 @@
         }
 
     }])
-})(angular.module('app.events'))
+})(angular.module('app.services'))
