@@ -2,7 +2,7 @@
 
     <div class="headers headers_history">
         <div class="container text-center">
-            <h1 class="intro-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head1"> <span>Histoire </span> de l'atelier Canteloup {{$ctrl.page.content.head1}}</h1>
+            <h1 class="intro-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head1"> {{$ctrl.page.content.head1}}</h1>
         </div>
         <div class="container text-center">
             <img class="img-responsive redline" src="/img/icons/line.png">
@@ -16,23 +16,23 @@
 
     <a id="firstPart"></a><div class="container normal_bloc">
         <div>
-            <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> <strong>Titre</strong> du paragraphe {{$ctrl.page.content.head2}} </h1>
-            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2">Lorem ipsum dolor sit amet {{$ctrl.page.content.para2}}</p>
+            <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> {{$ctrl.page.content.head2}} </h1>
+            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2"> {{$ctrl.page.content.para2}}</p>
         </div>
-        <carousel />
-        <!-- <div class="row">
-            <img class="col-xs-6 window" src="/img/pictures/photoNB.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
-            <img class="col-xs-6 window" src="/img/pictures/photoNB.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
+        <!-- <carousel /> -->
+        <div class="row">
+            <img class="col-xs-6 window" src="/img/pictures/office1.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
+            <img class="col-xs-6 window" src="/img/pictures/office1.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
         </div>
 
         <div class="row">
-            <img class="col-xs-6 window" src="/img/pictures/photoNB.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
-            <img class="col-xs-6 window" src="/img/pictures/photoNB.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
-        </div> -->
+            <img class="col-xs-6 window" src="/img/pictures/office1.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
+            <img class="col-xs-6 window" src="/img/pictures/office1.jpg" onmouseover="this.src='/img/pictures/photo.jpg'" onmouseout="this.src='/img/pictures/photoNB.jpg'" />
+        </div>
 
         <div>
-            <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head3"> <strong>Titre</strong> du paragraphe {{$ctrl.page.content.head2}}</h1>
-            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3">Lorem ipsum dolor sit amet {{$ctrl.page.content.para2}}</p>
+            <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head3"> {{$ctrl.page.content.head2}}</h1>
+            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3"> {{$ctrl.page.content.para2}}</p>
         </div>
     </div>
 </section>
