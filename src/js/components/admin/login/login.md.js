@@ -2,7 +2,7 @@
     'use strict'
     app.config(['$stateProvider', ($stateProvider) => {
         $stateProvider.state('app.admin.login', {
-            url:'/',
+            url:'',
             template: '<login />'
         })
     }])
