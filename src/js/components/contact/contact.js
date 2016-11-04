@@ -13,9 +13,15 @@
                   content: ''
               }
           })
+          
           this.gotofirstPart = function(){
             $location.hash('firstPart')
             $anchorScroll()
+          }
+
+          this.gototitle = function() {
+              $location.hash('title_page')
+              $anchorScroll()
           }
         }
     })

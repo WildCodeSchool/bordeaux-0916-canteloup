@@ -14,8 +14,14 @@
                     content: ''
                 }
             })
+
             this.gotofirstPart = function() {
                 $location.hash('firstPart')
+                $anchorScroll()
+            }
+
+            this.gototitle = function() {
+                $location.hash('title_page')
                 $anchorScroll()
             }
           this.coworkers = [
@@ -35,7 +41,7 @@
                 "company": "Wild Code School" ,
                 "slogan" : "Apprends à code sans chaussures",
                 "resume" : "La Wild Code School est une école nouvelle génération dont l’objectif est de combler le défaut de compétences numériques en formant des développeurs à portée des entreprises en quête de talents. Nous espérons devenir leader de la pédagogie hybride (blended learning) en pilotant un réseau d’écoles innovantes en France et à l’étranger. Les élèves de la Wild Code School forment une communauté soudée qui s’appuie sur l’entraide et le soutien mutuel. La joie de vivre et la passion font partie de notre quotidien. Une fois les cinq mois de formation validés, la Wild Code School permet d’obtenir le titre d’Etat « développeur logiciel » (équivalent bac+2), après avoir fait une expérience en milieu professionnel de 2 à 4 mois.",
-                "image" : "visu-AEC.png",
+                "image" : "visu-WCS.png",
                 "urllink" : "http://www.wildcodeschool.fr/"
               },{
                 "company": "Lourse" ,

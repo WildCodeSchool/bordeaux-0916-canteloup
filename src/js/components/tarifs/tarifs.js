@@ -7,6 +7,12 @@
                 $location.hash('firstPart')
                 $anchorScroll()
             }
+
+            this.gototitle = function() {
+                $location.hash('title_page')
+                $anchorScroll()
+            }
+
             angular.extend(this, {
                 page: {
                     name: 'tarifs',
