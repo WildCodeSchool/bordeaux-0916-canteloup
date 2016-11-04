@@ -7,7 +7,7 @@
             ngModel: '='
         },
         templateUrl: 'js/components/common/adminnav.html',
-        controller: function(PageService, UserService) {
+        controller: function(PageService, UserService, $state) {
             angular.extend(this, {
                 initialData: null,
                 $onInit() {
@@ -37,6 +37,7 @@
                 disconnect(){
                   UserService.disconnect().then(()=>{
                     this.user = null
+                    $state.reload()
                     toastr.success("Vous êtes déconnecté", "Connection")
                   })
                 }

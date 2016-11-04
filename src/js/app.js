@@ -62,6 +62,10 @@
     'app.coworkers',
     'app.contact',
     'app.events',
-    'app.admin'
-
+    'app.admin',
+    'app.admin.login',
+    'app.admin.summary',
+    'app.admin.coworkers',
+    'app.admin.users',
+    'app.admin.events'
   ]))
