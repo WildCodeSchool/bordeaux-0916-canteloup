@@ -1,21 +1,21 @@
 <section>
-    <div class="intro">
+    <a id="title_page"></a><div ng-parallax pattern="'/img/pictures/visu-top-home.png'" speed="1" reverse="false" class="intro">
         <videos autoplay />
-        <img src="../img/icons/logo-home-top.png" class="logo-titre center-block img-responsive">
+        <img src="/img/icons/logo-home-top.png" class="logo-titre center-block img-responsive">
         <div class="container text-center">
-            <p class="intro-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <img class="img-responsive redline" src="/img/icons/line.png">
+            <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
         </div>
         <div class="icon-scroll container text-center">
             <a ng-click="$ctrl.gotofirstPart()"><img class="icon_scroll" src="/img/icons/icon_scroll.png" /></a>
         </div>
     </div>
+    <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page"/>
 
     <a id="firstPart"></a><div class="container normal_bloc">
 
-         <h1> <strong> Histoire </strong> de l'atelier Canteloup </h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head1"> {{$ctrl.page.content.head1}}</h1>
+        <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2"> {{$ctrl.page.content.para2}}</p>
 
         <a ui-sref="app.history" class="col-xs-offset-3 col-xs-6 col-sm-offset-4 col-sm-3 btn-default"> En savoir + </a>
 
@@ -56,22 +56,62 @@
 
     <div class="container normal_bloc">
 
-        <h1> <strong> Bureaux </strong> à louer </h1>
+        <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> {{$ctrl.page.content.head2}}</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3"> {{$ctrl.page.content.para3}}</p>
 
         <a ui-sref="app.tarifs" class="col-xs-offset-4 col-xs-4 btn-default"> Consulter nos tarifs </a>
 
     </div>
 
-    <div class="container black img_backgroung_logo">
-        <iconscoworkers> </iconscoworkers>
+    <div ng-parallax pattern="'/img/pictures/visu-background-coworkers.png'" speed="3" reverse="false"  class="container black img_backgroung_logo">
+        <div class="container img_backgroung_logo">
+
+          <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head4" class="h1_v2"> {{$ctrl.page.content.head4}}</h1>
+
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
+                      <img src="/img/logos/Apperture-couleurs.png" alt="" class="logo_company center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/Lourse.png" alt="" class="logo_company center-block" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/3prime.png" alt="" class="logo_company center-block" />
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
+                      <img src="/img/logos/Devisubox-couleurs.png" alt="" class="logo_company" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/Elsie.png" alt="" class="logo_company" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/PopcornFX.png" alt="" class="logo_company" />
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-2 col-lg-2">
+                      <img src="/img/logos/Horizons.png" alt="" class="logo_company" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/WCS.png" alt="" class="logo_company" />
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-lg-offset-1 col-lg-2">
+                      <img src="/img/logos/AEC.png" alt="" class="logo_company" />
+                  </div>
+              </div>
+
+              <a ui-sref="app.tarifs" class="col-xs-offset-4 col-xs-4 btn-default"> Consulter nos tarifs </a>
+        </div>
     </div>
 
-    <div class="container normal_bloc">
+    <div class="container large_bloc">
 
-        <h1> Nos derniers <strong> Evénements </strong> </h1>
+        <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4"> {{$ctrl.page.content.para4}}</h1>
 
         <homeevent> </homeevent>
         <homeevent> </homeevent>
@@ -79,20 +119,24 @@
         <a ui-sref="app.events" class="col-xs-offset-4 col-xs-4 btn-default"> Voir tous nos evenements </a>
     </div>
 
-    <div class="container large_bloc">
+
         <map/>
-    </div>
 
     <div class="container normal_bloc">
-        <h1><strong> Contactez</strong>-nous</h1>
-        <p>
+        <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head3"><strong> Contactez</strong>-nous{{$ctrl.page.content.head3}}</h1>
+        <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para5">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
             in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            {{$ctrl.page.content.para5}}
         </p>
     </div>
 
     <div class="container large_bloc">
         <contactform> </contactform>
+    </div>
+
+    <div class="icon-scroll container text-right">
+        <a ng-click="$ctrl.gototitle()"><img class="icon_scroll icon_scroll_top" src="/img/icons/icon_scroll_top.png" /></a>
     </div>
 
 </section>

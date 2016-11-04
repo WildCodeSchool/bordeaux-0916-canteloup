@@ -1,6 +1,28 @@
 ((app) => {
     'use strict'
     app.component("history", {
-        templateUrl: 'js/components/history/history.html'
+        bindings: {
+            editMode: "<",
+            ngModel: "="
+        },
+        templateUrl: 'js/components/history/history.html',
+        controller: function($location, $anchorScroll) {
+            angular.extend(this, {
+                page: {
+                    name: 'history',
+                    content: ""
+                }
+            })
+            
+            this.gotofirstPart = function() {
+                $location.hash('firstPart')
+                $anchorScroll()
+            }
+
+            this.gototitle = function() {
+                $location.hash('title_page')
+                $anchorScroll()
+            }
+        }
     })
 })(angular.module('app.history'))

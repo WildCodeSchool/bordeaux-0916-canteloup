@@ -1,0 +1,1 @@
+{"_id":{"$oid":"57f254fe3f87066015212c26"},"updatedAt":{"$date":"2016-10-03T12:54:22.598Z"},"createdAt":{"$date":"2016-10-03T12:54:22.598Z"},"email":"admin@domain.ext","password":"admin","isAdmin":true,"__v":0}

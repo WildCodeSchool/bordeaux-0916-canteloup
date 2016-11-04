@@ -1,10 +1,12 @@
 ((app) => {
     'use strict'
     app.component("carousel", {
-        templateUrl: 'js/components/common/carousel.html',
         bindings: {
+            editMode: "<",
+            ngModel: "=",
             user: '<'
         },
+        templateUrl: 'js/components/common/carousel.html',
         controller: ['$interval', function($interval) {
             let currdeg = 0;
             let carousel = angular.element('.carousel');

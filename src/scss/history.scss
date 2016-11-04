@@ -4,8 +4,11 @@
 section {
   display: block;
   background-position: center;
+  text-align: justify;
+  margin-bottom: 60px;
 }
 
-.fa {
-  margin-top: 175px;
-}
+// .fa , rename because already use it , it's a must have if glyficon already used
+// .tglyph {
+//   margin-top: 175px;
+// }

@@ -1,113 +1,173 @@
 @import 'colors';
-
 /* Common */
-.normal_bloc{
-  max-width: 800px;
+.normal_bloc {
+    max-width: 800px;
 }
-.medium_bloc{
-  max-width: 1000px;
+
+.medium_bloc {
+    max-width: 1000px;
 }
-.large_bloc{
-  max-width : 100%;
+
+.large_bloc {
+    max-width: 100%;
 }
 
 strong {
-  color : $primary;
+    color: $primary;
 }
 
-h1{
-  text-align: center;
-  margin : 10% ;
+h1 {
+    text-align: center;
+    margin: 10% 10% 5%;
 }
 
-.black{
-  background-color: $black;
-  width:100%;
+.h1_v2 {
+    color: $white;
 }
 
-p{
-  text-align : justify;
-  margin : 5% 0 5% 0;
+.black {
+    background-color: $black;
+    width: 100%;
 }
 
+p {
+    text-align: justify;
+    margin: 5% 0;
+}
 /* intro */
-
 .intro {
-    background-image: url('/img/pictures/Visu-Home-TOP.png');
-    background-position: bottom;
-    background-size: cover;
-  //  min-height: 900px;
-    width : 100%;
-    height : auto;
+    //background-image: url('/img/pictures/visu-top-home.png');
+    //background-position: bottom;
+    //background-size: cover;
+    //  min-height: 900px;
+    width: 100%;
+    height: auto;
     margin-bottom: 8%;
+
+    .redline {
+        padding-top: 6%;
+        margin: auto;
+    }
 }
 
-.logo-titre{
-  margin : auto;
-  //margin-top: 8%;
+.logo-titre {
+    margin: auto;
+    width: 25%;
+    margin-top: 5%;
 }
 
-.intro-subtitle{
-  font-family: Lato Light;
-  color:$white;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 0 20% 0 20%;
+.intro-subtitle {
+    font-family: Lato Light;
+    color: $white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 20%;
 }
 
-.icon_scroll{
-  margin-bottom: 20px;
+.icon_scroll {
+    margin-bottom: 40px;
 }
 
-/* Home content */
-
-img.window{
-  margin-bottom : 5%;
-}
-
-.img_backgroung_logo{
-  background-image: url(/img/pictures/visu-background-coworkers.png);
-}
-
-/* intro other pages */
-
-.headers {
-    background-image: url('../img/pictures/openspaceNB.jpg');
-    background-position: bottom;
-    background-size: cover;
-    min-height: 500px;
+.icon_scroll_top {
+    margin-top: 40px;
     margin-bottom: 10px;
 }
+/* Home content */
+img.window {
+    margin-bottom: 5%;
+}
+
+.img_backgroung_logo {
+    .logo_company {
+        text-align: left;
+        width: 99%;
+    }
+}
+/* intro other pages */
+.headers {
+    background-position: bottom;
+    background-size: cover;
+    min-height: 450px;
+    margin-bottom: 10px;
+
+    h1 {
+        margin-top: 15%;
+        color: $white;
+        text-transform: uppercase;
+        font-family: Lato;
+        font-weight: 200;
+        font-size: 3em;
+        margin-bottom: 5%;
+    }
+
+    .redline {
+        margin: auto;
+    }
+}
+
+.headers_history {
+    background-image: url('/img/pictures/visu-top-history.png');
+}
+
+.headers_tarifs {
+    background-image: url('/img/pictures/visu-top-tarifs.png');
+}
+
+.headers_coworkers {
+    background-image: url('/img/pictures/visu-top-coworkers.png');
+}
+
+.headers_events {
+    background-image: url('/img/pictures/visu-top-events.png');
+}
+
+.headers_contact {
+    background-image: url('/img/pictures/visu-top-contact.png');
+}
+
+.headers_admin {
+    background-image: url('/img/pictures/visu-top-admin.png');
+}
+
 .intro-title {
     font-size: 4em;
     margin-top: 80px;
-    color:$primary;
+    color: $primary;
     //text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
     margin-bottom: 80px;
 }
+
 .subtitle {
-  color:$white;
-  font-size: 2em;
-  text-align: center;
+    color: $white;
+    font-size: 2em;
+    text-align: center;
 }
-
 /* bouttons */
-
 .btn-default {
-  font-family: Lato Black;
-  text-align: center;
-  text-transform: uppercase;
-  padding : 10px;
-  border-radius : 20px;
-  margin-bottom: 60px;
-  margin-top : 30px;
-  background-color: $primary;
-  color: $white;
-  border: solid $transparent 2px;
+    font-family: Lato Black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    background-color: $primary;
+    color: $white;
+    border: solid $transparent 2px;
 }
 
 .btn-default:hover {
-  background-color: $transparent;
-  color: $primary;
-  border: solid $primary 2px;
+    background-color: $transparent;
+    color: $primary;
+    border: solid $primary 2px;
+}
+/* row_ac */
+.row_acanteloup {
+    padding: 0;
+    margin-top: 4%;
+    width: 100%;
+    //height: 520px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px $light-gray;
+    max-width: 1300px;
 }

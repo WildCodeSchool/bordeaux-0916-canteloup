@@ -8,8 +8,10 @@
 
 .navbar-nav > li > a {
     color: $white !important;
+    font-family: Lato;
     line-height: 20px;
-    font-weight: bold;
+    font-size : 1.3em;
+    margin-left: 20px;
 }
 
 a.ng-binding:active{
@@ -20,12 +22,14 @@ a.ng-binding:active{
 
 .navbar-nav > .open > a,
 .navbar-nav > li > a:hover {
-    color: #C0C0C0 !important;
+    color: $primary !important;
+    font-weight: bold;
 }
 
 .navbar-nav > .selected > a {
     color : $primary !important;
     border-bottom: 2px solid $primary;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-toggle .icon-bar,
