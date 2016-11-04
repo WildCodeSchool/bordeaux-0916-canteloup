@@ -35,24 +35,19 @@
       <a ui-sref="app.contact" class="col-xs-offset-3 col-xs-6 col-sm-offset-4 col-sm-4 btn-default"> Nous contacter </a>
     </div>
 
-    <div class="container container_ac container_ac_price">
+    <div class="container container_ac container_ac_price" ng-repeat="tarif in $ctrl.tarifs">
         <div class="row row_ac">
             <img class="col-xs-12 col-md-4 img_ac " src="img/visu/visu-event1.png"></img>
             <div class="col-xs-12 col-md-8">
-                <h2 class="h2_ac">Nom de l'espace à louer</h2>
-                <h3 class="h3_ac">Courte déscription de l'espace à louer</h3>
-                <p class="p_ac">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                  </p>
-                <h2 class="h2_ac h2_ac_price"> 129€/mois</h2>
-            </div>
+              <h2 class="h2_ac"> {{tarif.officeTitle}} </h2>
+              <h3 class="h3_ac"> {{tarif.officeSubtitle}} </h3>
+              <p class="p_ac"> {{tarif.officeDescription}} </p>
+              <h2 class="h2_ac h2_ac_price"> {{tarif.officePrice}}</h2>
+          </div>
             <a ui-sref="app.contact" class="col-xs-offset-3 col-xs-7 col-sm-offset-5 col-sm-2 btn-default btn_ac"> Nous contacter </a>
         </div>
     </div>
-    
+
     <div class="icon-scroll container text-right">
         <a ng-click="$ctrl.gototitle()"><img class="icon_scroll icon_scroll_top" src="/img/icons/icon_scroll_top.png" /></a>
     </div>
