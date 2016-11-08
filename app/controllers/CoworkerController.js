@@ -24,16 +24,24 @@ class CoworkerContoller extends Controller {
     }
 
     upload(req, res, next) {
-        let form = new formidable.IncomingForm();
+        let form = new formidable.IncomingForm()
 
-        form.uploadDir = './public/img/coworkers/';
+        form.uploadDir = './public/img/coworkers/'
 
         form
-            .on('file', function(field, file) {
-                fs.rename(file.path, form.uploadDir + "/" + file.name);
+            .on('file', (field, file) => {
+                fs.rename(file.path, form.uploadDir + "/" + file.name)
+                this.model.findById(req.params.id).exec((err, coworker) => {
+                    if (err){
+                        next(err)
+                    } else {
+                      coworker.image = "/img/coworkers/" + file.name
+                      coworker.save()
+                    }
+                })
             })
-            .on('end', function() {
-                console.log('-> upload done');
+            .on('end', () => {
+                console.log('-> upload done')
                 res.sendStatus(200)
             });
         form.parse(req);

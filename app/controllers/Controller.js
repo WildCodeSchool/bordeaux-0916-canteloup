@@ -40,7 +40,7 @@ class Controller {
             if (err)
                 next(err)
             else
-                res.json(object)
+                return this.findById(req, res, next)
         })
     }
 

@@ -33,9 +33,9 @@
 
                     UserService.save(this.selectedUser).then((res) => {
                         if (angular.isUndefined(this.selectedUser._id))
-                            this.users[this.users.length - 1] = res.data
+                            this.users.push(res.data)
 
-                        this.selectedUser = this.users[this.users.length - 1]
+                        this.selectedUser = res.data
 
                         toastr.success(`${this.selectedUser.firstname} ${this.selectedUser.lastname} saved`)
                     }).catch((err) => {

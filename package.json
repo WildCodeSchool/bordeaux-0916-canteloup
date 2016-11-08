@@ -9,7 +9,7 @@
     "install": "node install.js",
     "postinstall": "bower install && brunch build --production",
     "prestart": "brunch build --production",
-    "start": "node tiny-mean-cms.js",
+    "start": "node canteloup.js",
     "dev": "brunch watch --server"
   },
   "dependencies": {

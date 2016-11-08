@@ -30,9 +30,9 @@
               save() {
                   CoworkersService.save(this.selectedCoworker).then((res) => {
                       if (angular.isUndefined(this.selectedCoworker._id))
-                          this.coworkers[this.coworkers.length - 1] = res.data
+                          this.coworkers.push(res.data)
 
-                      this.selectedCoworker = this.coworkers[this.coworkers.length - 1]
+                      this.selectedCoworker = res.data
                       if (this.uploadImage){
                           CoworkersService.upload(this.selectedCoworker, this.uploadImage).then((res) => {
                             this.uploadImage = null
@@ -40,6 +40,8 @@
                           }).catch((err) => {
                             toastr.warning(`${this.selectedCoworker.company} upload image error`)
                           })
+                      }else {
+                        toastr.success(`${this.selectedCoworker.company} saved`)
                       }
                   }).catch((err) => {
                       toastr.error(`${err.data}`)
