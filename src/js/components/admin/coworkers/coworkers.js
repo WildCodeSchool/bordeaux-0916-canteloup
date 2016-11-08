@@ -2,40 +2,55 @@
     'use strict'
     app.component("adminCoworkers", {
         templateUrl: 'js/components/admin/coworkers/coworkers.html',
-        controller: function(CoworkersService, $state) {
+        controller: function(CoworkersService, $state, $timeout, $location, $anchorScroll) {
             angular.extend(this, {
               $onInit() {
                   CoworkersService.getAll().then((res) => {
                       this.coworkers = res.data
                   })
               },
-              edit(user) {
-                  this.selectedUser = user
-                  this.scrollTo('formUser')
+              back(){
+                $state.go('app.admin.summary')
+              },
+              scrollTo(id){
+                  $timeout(function() {
+                      $location.hash()
+                      $anchorScroll(id)
+                  }, 100)
+                },
+              edit(coworker) {
+                  this.selectedCoworker = coworker
+                  this.scrollTo('formCoworker')
               },
               add() {
-                  this.selectedUser = {}
+                  this.selectedCoworker = {}
                   this.coworkers.push(this.selectedCoworker)
-                  this.scrollTo('formUser')
+                  this.scrollTo('formCoworker')
               },
               save() {
-                  CoworkersService.save(this.selectedUser).then((res) => {
-                      if (angular.isUndefined(this.selectedUser._id))
+                  CoworkersService.save(this.selectedCoworker).then((res) => {
+                      if (angular.isUndefined(this.selectedCoworker._id))
                           this.coworkers[this.coworkers.length - 1] = res.data
 
-                      this.selectedUser = this.coworkers[this.coworkers.length - 1]
-
-                      toastr.success(`${this.selectedCoworker.compagny} saved`)
+                      this.selectedCoworker = this.coworkers[this.coworkers.length - 1]
+                      if (this.uploadImage){
+                          CoworkersService.upload(this.selectedCoworker, this.uploadImage).then((res) => {
+                            this.uploadImage = null
+                            toastr.success(`${this.selectedCoworker.company} saved`)
+                          }).catch((err) => {
+                            toastr.warning(`${this.selectedCoworker.company} upload image error`)
+                          })
+                      }
                   }).catch((err) => {
                       toastr.error(`${err.data}`)
                   })
 
               },
               delete(idx, coworker) {
-                  this.coworkers.splice(idx + this.startIndex, 1)
+                  this.coworkers.splice(idx, 1)
                   if (angular.isDefined(coworker._id)) {
                       CoworkersService.delete(coworker).then(() => {
-                          toastr.success(`${this.coworker.compagny} saved`)
+                          toastr.warning(`${coworker.company} deleted`)
                           this.selectedCoworker = null
                       }).catch((err) => {
                           toastr.error(`${err.data}`)

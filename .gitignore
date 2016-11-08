@@ -2,7 +2,5 @@
 /bower_components/
 /node_modules/
 npm-debug.log*
-.jshintrc
-.jshintignore
 /public/
 TODO.md

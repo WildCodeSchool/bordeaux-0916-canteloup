@@ -7,16 +7,15 @@
         },
         templateUrl: 'js/components/coworkers/coworkers.html',
 
-        controller: function($location, $anchorScroll, coworkersService) {
+        controller: function($location, $anchorScroll, CoworkersService) {
             angular.extend(this, {
                 page: {
                     name: 'coworkers',
                     content: ''
                 },
                 $onInit() {
-                    coworkersService.getAll().then((res) => {
+                    CoworkersService.getAll().then((res) => {
                         this.coworkers = res.data
-
                     })
                 },
                 gotofirstPart() {

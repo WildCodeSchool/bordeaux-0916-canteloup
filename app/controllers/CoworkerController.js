@@ -1,11 +1,13 @@
 'use strict'
+let fs = require('fs')
+let formidable = require('formidable')
 let Controller = require('./Controller')
-const PAGE = require('../models/page')
+const COWORKER = require('../models/coworker')
 
 class CoworkerContoller extends Controller {
 
     constructor() {
-        super(PAGE)
+        super(COWORKER)
     }
 
     findByName(req, res, next) {
@@ -19,6 +21,22 @@ class CoworkerContoller extends Controller {
             else
                 res.json(coworker)
         })
+    }
+
+    upload(req, res, next) {
+        let form = new formidable.IncomingForm();
+
+        form.uploadDir = './public/img/coworkers/';
+
+        form
+            .on('file', function(field, file) {
+                fs.rename(file.path, form.uploadDir + "/" + file.name);
+            })
+            .on('end', function() {
+                console.log('-> upload done');
+                res.sendStatus(200)
+            });
+        form.parse(req);
     }
 }
 

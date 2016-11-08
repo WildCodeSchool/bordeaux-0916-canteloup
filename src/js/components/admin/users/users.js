@@ -2,12 +2,21 @@
     'use strict'
     app.component("users", {
         templateUrl: 'js/components/admin/users/users.html',
-        controller: function(UserService, $state) {
+        controller: function(UserService, $state, $timeout, $location, $anchorScroll) {
             angular.extend(this, {
                 $onInit() {
                     UserService.getAll().then((res) => {
                         this.users = res.data
                     })
+                },
+                back(){
+                  $state.go('app.admin.summary')
+                },
+                scrollTo(id){
+                  $timeout(function() {
+                      $location.hash()
+                      $anchorScroll(id)
+                  }, 100)
                 },
                 edit(user) {
                     this.selectedUser = user

@@ -32,7 +32,6 @@ h1 {
 
 p {
     text-align: justify;
-    margin: 5% 0;
 }
 /* intro */
 .intro {
@@ -62,6 +61,7 @@ p {
     font-size: 1.2em;
     text-align: center;
     padding: 0 20%;
+    margin: 5% 0;
 }
 
 .icon_scroll {
@@ -129,14 +129,6 @@ img.window {
     background-image: url('/img/pictures/visu-top-admin.png');
 }
 
-.intro-title {
-    font-size: 4em;
-    margin-top: 80px;
-    color: $primary;
-    //text-shadow: $white 1px 1px, $white -1px 1px, $white -1px -1px, $white 1px -1px;
-    margin-bottom: 80px;
-}
-
 .subtitle {
     color: $white;
     font-size: 2em;
@@ -149,8 +141,8 @@ img.window {
     text-transform: uppercase;
     padding: 10px;
     border-radius: 25px;
-    margin-bottom: 60px;
-    margin-top: 30px;
+    // margin-bottom: 60px;
+    // margin-top: 30px;
     background-color: $primary;
     color: $white;
     border: solid $transparent 2px;

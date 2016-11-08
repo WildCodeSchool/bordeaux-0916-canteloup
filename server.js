@@ -23,8 +23,13 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 app.use(bodyParser.json({
-    type: 'application/vnd.api+json'
+    type: 'application/vnd.api+json',
 }))
+
+app.use(bodyParser.urlencoded({
+    limit: '50mb',
+    extended: true
+}));
 
 app.use(methodOverride('X-HTTP-Method-Override'))
 

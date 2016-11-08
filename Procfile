@@ -1,1 +1,1 @@
-web: node tiny-mean-cms
+web: node canteloup

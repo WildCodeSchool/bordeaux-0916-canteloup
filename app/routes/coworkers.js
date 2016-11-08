@@ -19,4 +19,6 @@ module.exports = (app) => {
 
 	app.delete('/coworkers/:id', Auth.user.isAdministrator, (req, res, next) => { return coworkeCtrl.delete(req, res, next) })
 
+	app.post('/coworkers/upload/:id', Auth.user.isAdministrator, (req, res, next) => { return coworkeCtrl.upload(req, res, next) })
+
 }

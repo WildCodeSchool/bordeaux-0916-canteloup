@@ -1,9 +1,9 @@
 <section>
     <div class="row">
-        <a class="btn" ui-sref="app.admin.summary">Retour</a>
-        <button class="btn pull-right" ng-click="$ctrl.add()"><i class="fa fa-plus"></i> {{'COMMON_ADD' | translate}}</button>
+        <button class="btn-default" ng-click="$ctrl.back()">Retour</button>
+        <button class="btn-default pull-right" ng-click="$ctrl.add()"><i class="fa fa-plus"></i> {{'COMMON_ADD' | translate}}</button>
     </div>
-
+    <br />
     <div class="row">
         <table class="table col-md-12">
             <tr>
@@ -13,21 +13,21 @@
                 <th colspan="2">Admin</th>
             </tr>
             <tr ng-repeat="user in $ctrl.users">
-              <td>{{$index}}</td>
-              <td>{{user.firstname + ' ' + user.lastname }}</td>
-              <td>{{user.email}}</td>
-              <td><i class="fa fa-check" ng-style="{'color':(user.isAdmin ? 'green' : 'gray')}"></i></td>
-              <td><button class="btn btn-error" type="button" name="button" ng-click="$ctrl.delete($index, user)"><i class="fa fa-trash"></i></button>
-                <button class="btn btn-warning" type="button" name="button" ng-click="$ctrl.edit(user)"><i class="fa fa-pencil"></i></button>
-              </td>
+                <td>{{$index}}</td>
+                <td>{{user.firstname + ' ' + user.lastname }}</td>
+                <td>{{user.email}}</td>
+                <td><i class="fa fa-check" ng-style="{'color':(user.isAdmin ? 'green' : 'gray')}"></i></td>
+                <td><button class="btn btn-error" type="button" name="button" ng-click="$ctrl.delete($index, user)"><i class="fa fa-trash"></i></button>
+                    <button class="btn btn-warning" type="button" name="button" ng-click="$ctrl.edit(user)"><i class="fa fa-pencil"></i></button>
+                </td>
             </tr>
         </table>
     </div>
 
     <div class="row" ng-if="$ctrl.selectedUser">
-          <h4 class="header">{{'COMMON_EDIT' | translate}}</h4>
-          <form id="formUser" name="formUser" class="form">
-              <div class="row">
+        <h4 class="header">{{'COMMON_EDIT' | translate}}</h4>
+        <form id="formUser" name="formUser" class="form">
+            <div class="row">
                 <div class="col-md-6 form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
@@ -44,8 +44,8 @@
                         <input type="text" class="form-control" id="inputLastname" placeholder="{{'COMMON_LASTNAME' | translate}}" ng-model="$ctrl.selectedUser.lastname">
                     </div>
                 </div>
-              </div>
-              <div class="row">
+            </div>
+            <div class="row">
                 <div class="col-md-6 form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
@@ -62,18 +62,18 @@
                         <input type="password" class="form-control" id="inputPass" name="inputPass" placeholder="{{'COMMON_PASSWORD' | translate}}" ng-model="$ctrl.selectedUser.password" ng-required="!$ctrl.selectedUser._id">
                     </div>
                 </div>
-              </div>
-              <div class="row">
+            </div>
+            <div class="row">
                 <div class="col-md-6 form-group">
                     <div class="input-group">
-                      <input id="boxAdmin" class="checkbox" type="checkbox" ng-model="$ctrl.selectedUser.isAdmin" />
-                      <label for="boxAdmin" class="css-label">{{'COMMON_ADMIN' | translate}}</label>
+                        <input id="boxAdmin" class="checkbox" type="checkbox" ng-model="$ctrl.selectedUser.isAdmin" />
+                        <label for="boxAdmin" class="css-label">{{'COMMON_ADMIN' | translate}}</label>
                     </div>
                 </div>
                 <div class="col-md-6 form-group frm-buttons">
-                    <button type="submit" class="btn col-sm-4 pull-right" ng-click="$ctrl.save()" ng-disabled="formUser.$pristine || formUser.$invalid"><i class="fa fa-save"></i> {{'COMMON_SAVE' | translate}}</button>
+                    <button type="submit" class="btn-default btn1 pull-right" ng-click="$ctrl.save()" ng-disabled="formUser.$pristine || formUser.$invalid"><i class="fa fa-save"></i> {{'COMMON_SAVE' | translate}}</button>
                 </div>
             </div>
-          </form>
-      </div>
+        </form>
+    </div>
 </section>

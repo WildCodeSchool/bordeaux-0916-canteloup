@@ -1,17 +1,5 @@
 # bordeaux-0916-canteloup
 
-[![Licence](https://img.shields.io/badge/licence-MIT-blue.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/blob/master/LICENCE) [![Release](https://img.shields.io/github/release/jbehuet/tiny-mean-cms.svg?maxAge=2592000)](https://github.com/jbehuet/tiny-mean-cms/releases)
-[![GitHub forks](https://img.shields.io/github/forks/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/network) [![GitHub issues](https://img.shields.io/github/issues/jbehuet/tiny-mean-cms.svg)](https://github.com/jbehuet/tiny-mean-cms/issues)
-
-CMS Project with [MEAN stack](http://mean.io/#!/)
-
-### Previews
-| Home   |      Edition      | Dashboard |
-|:----------:|:-------------:|:------:|
-| <img src="http://jbehuet.fr/files/screens/mean-starter/001.png" width="400px" />   |  <img src="http://jbehuet.fr/files/screens/mean-starter/002.png" width="400px" />   | <img src="http://jbehuet.fr/files/screens/mean-starter/003.png" width="400px" /> |
-
-[Show demo](http://tiny-mean-cms.herokuapp.com/#/)
-
 ### Prerequisites
 * [NodeJS](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com/)
@@ -23,7 +11,6 @@ CMS Project with [MEAN stack](http://mean.io/#!/)
 ```bash
 git clone https://github.com/WildCodeSchool/bordeaux-0916-canteloup.git   
 cd bordeaux-0916-canteloup
-bower i
 npm i
 ```
 

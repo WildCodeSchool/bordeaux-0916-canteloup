@@ -1,0 +1,30 @@
+{
+  "globals"   : {
+    "describe"   : false,
+    "it"         : false,
+    "before"     : false,
+    "beforeEach" : false,
+    "after"      : false,
+    "afterEach"  : false,
+    "angular"    : false,
+    "$"          : false,
+    "toastr"     : false,
+    "md5"        : false,
+    "window"     : false,
+    "FileReader" : false
+  },
+  "camelcase": true,
+  "curly": false,
+  "eqeqeq": true,
+  "freeze": true,
+  "indent": 2,
+  "latedef": true,
+  "laxcomma": true,
+  "node": true,
+  "esnext": true,
+  "trailing": true,
+  "strict": true,
+  "unused": "vars",
+  "undef": true,
+  "asi": true
+}
