@@ -101,6 +101,6 @@ exports.config = {
         }
     },
     server: {
-        command: "nodemon --inspect canteloup"
+        command: "node --inspect canteloup"
     }
 }

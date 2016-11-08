@@ -1,13 +1,11 @@
 'use strict'
-let fs = require('fs')
-let formidable = require('formidable')
 let Controller = require('./Controller')
 const COWORKER = require('../models/coworker')
 
 class CoworkerContoller extends Controller {
 
     constructor() {
-        super(COWORKER)
+        super(COWORKER, 'coworkers/')
     }
 
     findByName(req, res, next) {
@@ -23,29 +21,6 @@ class CoworkerContoller extends Controller {
         })
     }
 
-    upload(req, res, next) {
-        let form = new formidable.IncomingForm()
-
-        form.uploadDir = './public/img/coworkers/'
-
-        form
-            .on('file', (field, file) => {
-                fs.rename(file.path, form.uploadDir + "/" + file.name)
-                this.model.findById(req.params.id).exec((err, coworker) => {
-                    if (err){
-                        next(err)
-                    } else {
-                      coworker.image = "/img/coworkers/" + file.name
-                      coworker.save()
-                    }
-                })
-            })
-            .on('end', () => {
-                console.log('-> upload done')
-                res.sendStatus(200)
-            });
-        form.parse(req);
-    }
 }
 
 module.exports = CoworkerContoller

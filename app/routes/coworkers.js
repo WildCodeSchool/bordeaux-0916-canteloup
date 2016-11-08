@@ -1,5 +1,5 @@
 /* -------------------------------- *\
-	 				   ROUTES PAGES
+	 				ROUTES COWORKERS
 \* -------------------------------- */
 'use strict'
 let CoworkerController = require('../controllers/CoworkerController')

@@ -1,7 +1,83 @@
 <section>
     <div class="row">
-        <a class="btn" ui-sref="app.admin.summary">Retour</a>
-        <button class="btn pull-right" ng-click="$ctrl.add()"><i class="fa fa-plus"></i> {{'COMMON_ADD' | translate}}</button>
+        <button class="btn-default" ng-click="$ctrl.back()">Retour</button>
+        <button class="btn-default pull-right" ng-click="$ctrl.add()"><i class="fa fa-plus"></i> {{'COMMON_ADD' | translate}}</button>
+    </div>
+    <br />
+    <div class="row">
+        <table class="table col-md-12">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Publié</th>
+                <th colspan="2">Date</th>
+            </tr>
+            <tr ng-repeat="event in $ctrl.events">
+                <td>{{$index}}</td>
+                <td>{{event.title}}</td>
+                <td><i class="fa fa-check" ng-style="{'color':(event.isDraft ? 'gray' : 'green')}"></i></td>
+                <td>{{event.date | date: 'dd MMM yyyy'}}</td>
+                <td class="text-right">
+                    <button class="btn btn-error" type="button" name="button" ng-click="$ctrl.delete($index, event)"><i class="fa fa-trash"></i></button>
+                    <button class="btn btn-warning" type="button" name="button" ng-click="$ctrl.edit(event)"><i class="fa fa-pencil"></i></button>
+                </td>
+            </tr>
+        </table>
     </div>
 
+    <div class="row" ng-if="$ctrl.selectedEvent">
+        <h4 class="header">{{'COMMON_EDIT' | translate}}</h4>
+        <form id="formEvent" name="formEvent" class="form">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-header"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Title" ng-model="$ctrl.selectedEvent.title">
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-chevron-right"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Subtitle" ng-model="$ctrl.selectedEvent.subtitle">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <text-angular class="col-md-12 form-group message" ng-model="$ctrl.selectedEvent.description" ng-required="true"></text-angular>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                        <input type="date" class="form-control" placeholder="Website" ng-model="$ctrl.selectedEvent.date" format-date>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-file-image-o"></i>
+                        </span>
+                        <file name="image" class="form-control" ng-model="$ctrl.uploadImage" accept="image/png,image/jpg,image/jpeg" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                  <div class="input-group">
+                      <input id="boxDraft" class="checkbox" type="checkbox" ng-model="$ctrl.selectedEvent.isDraft" />
+                      <label for="boxDraft" class="css-label">Brouillon</label>
+                  </div>
+              </div>
+                <div class="col-md-6 form-group frm-buttons">
+                    <button type="submit" class="col-sm-6 pull-right btn-default btn1" ng-click="$ctrl.save()" ng-disabled="formEvent.$pristine || formEvent.$invalid"><i class="fa fa-save"></i> {{'COMMON_SAVE' | translate}}</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </section>

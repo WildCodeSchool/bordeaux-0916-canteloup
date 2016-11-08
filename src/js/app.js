@@ -39,26 +39,6 @@
         }
     }]
 
-    const fileRead = [() => {
-        return {
-            scope: {
-                fileread: "="
-            },
-            link: function(scope, element, attributes) {
-                element.bind("change", function(changeEvent) {
-                    debugger
-                    var reader = new FileReader();
-                    reader.onload = function(loadEvent) {
-                        scope.$apply(function() {
-                            scope.fileRead = loadEvent.target.result;
-                        });
-                    }
-                    reader.readAsDataURL(changeEvent.target.files[0]);
-                });
-            }
-        }
-    }]
-
     const file = [() => {
         return {
             restrict: 'E',
@@ -76,10 +56,25 @@
         }
     }]
 
+    const formatDate = [() => {
+        return {
+            require: 'ngModel',
+            link: function(scope, elem, attr, modelCtrl) {
+                modelCtrl.$formatters.push(function(modelValue) {
+                    if (modelValue) {
+                        return new Date(modelValue);
+                    } else {
+                        return null;
+                    }
+                });
+            }
+        };
+    }]
+
     app.directive('checkPassword', checkPassword)
     app.directive('gravatar', gravatar)
     app.directive('file', file)
-    app.directive('fileRead', fileRead)
+    app.directive('formatDate', formatDate)
     app.run()
 
 })(angular.module('app', [

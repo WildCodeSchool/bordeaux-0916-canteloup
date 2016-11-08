@@ -6,14 +6,14 @@
             ngModel: "="
         },
         templateUrl: 'js/components/events/events.html',
-        controller: function($location, $anchorScroll, eventsService) {
+        controller: function($location, $anchorScroll, EventsService) {
           angular.extend(this, {
                 page: {
                     name: 'events',
                     content: ''
                 },
                 $onInit() {
-                    eventsService.getAll().then((res) => {
+                    EventsService.getPublished().then((res) => {
                         this.events = res.data
                     })
                 },

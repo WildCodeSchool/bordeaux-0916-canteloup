@@ -17,8 +17,9 @@
                 <td>{{user.firstname + ' ' + user.lastname }}</td>
                 <td>{{user.email}}</td>
                 <td><i class="fa fa-check" ng-style="{'color':(user.isAdmin ? 'green' : 'gray')}"></i></td>
-                <td><button class="btn btn-error" type="button" name="button" ng-click="$ctrl.delete($index, user)"><i class="fa fa-trash"></i></button>
-                    <button class="btn btn-warning" type="button" name="button" ng-click="$ctrl.edit(user)"><i class="fa fa-pencil"></i></button>
+                <td class="text-right">
+                  <button class="btn btn-error" type="button" name="button" ng-click="$ctrl.delete($index, user)"><i class="fa fa-trash"></i></button>
+                  <button class="btn btn-warning" type="button" name="button" ng-click="$ctrl.edit(user)"><i class="fa fa-pencil"></i></button>
                 </td>
             </tr>
         </table>

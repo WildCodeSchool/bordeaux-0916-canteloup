@@ -11,7 +11,9 @@
     "toastr"     : false,
     "md5"        : false,
     "window"     : false,
-    "FileReader" : false
+    "FileReader" : false,
+    "XMLHttpRequest": false,
+    "FormData"   : false
   },
   "camelcase": true,
   "curly": false,
