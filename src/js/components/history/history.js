@@ -6,23 +6,28 @@
             ngModel: "="
         },
         templateUrl: 'js/components/history/history.html',
-        controller: function($location, $anchorScroll) {
+        controller: function($location, $anchorScroll, PageService) {
             angular.extend(this, {
                 page: {
                     name: 'history',
                     content: ""
+                },
+                gotofirstPart() {
+                    $location.hash('firstPart')
+                    $anchorScroll()
+                },
+                gototitle() {
+                    $location.hash('title_page')
+                    $anchorScroll()
+                },
+                upload(file, field) {
+                    PageService.upload(this.page, file, field).then(() => {
+                        toastr.success(`${file.name} uploaded`)
+                    }).catch((err) => {
+                        toastr.warning(`${file.name} upload error`)
+                    })
                 }
             })
-            
-            this.gotofirstPart = function() {
-                $location.hash('firstPart')
-                $anchorScroll()
-            }
-
-            this.gototitle = function() {
-                $location.hash('title_page')
-                $anchorScroll()
-            }
         }
     })
 })(angular.module('app.history'))

@@ -117,8 +117,7 @@
 
         <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4"> {{$ctrl.page.content.para4}}</h1>
 
-        <homeevent> </homeevent>
-        <homeevent> </homeevent>
+        <homeevent ng-repeat="event in $ctrl.events" ng-model="event"></homeevent>
 
         <a ui-sref="app.events" class="col-xs-offset-4 col-xs-4 btn-default" style="margin-top: 30px;"> Voir tous nos evenements </a>
     </div>

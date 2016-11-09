@@ -27,7 +27,7 @@ app.use(bodyParser.json({
 }))
 
 app.use(bodyParser.urlencoded({
-    limit: '50mb',
+    limit: '5mb',
     extended: true
 }));
 

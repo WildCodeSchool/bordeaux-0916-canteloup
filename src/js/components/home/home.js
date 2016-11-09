@@ -6,23 +6,26 @@
             ngModel: "="
         },
         templateUrl: 'js/components/home/home.html',
-        controller: function($location, $anchorScroll) {
+        controller: function($location, $anchorScroll, EventsService) {
             angular.extend(this, {
                 page: {
                     name: 'home',
                     content: ''
+                },
+                $onInit(){
+                  EventsService.getByLimit(3).then((res)=>{
+                    this.events = res.data
+                  })
+                },
+                gotofirstPart() {
+                    $location.hash('firstPart')
+                    $anchorScroll()
+                },
+                gototitle() {
+                    $location.hash('title_page')
+                    $anchorScroll()
                 }
             })
-
-            this.gotofirstPart = function() {
-                $location.hash('firstPart')
-                $anchorScroll()
-            }
-
-            this.gototitle = function() {
-                $location.hash('title_page')
-                $anchorScroll()
-            }
         }
     })
 })(angular.module('app.home'))

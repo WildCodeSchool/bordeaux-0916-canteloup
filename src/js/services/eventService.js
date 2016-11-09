@@ -11,6 +11,10 @@
             return this.$http.get('/api/events')
         }
 
+        getByLimit(limit) {
+            return this.$http.get('/api/events/published/?limit=' + limit)
+        }
+
         getPublished(){
           return this.$http.get('/api/events/published')
         }

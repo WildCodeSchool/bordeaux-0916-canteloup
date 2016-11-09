@@ -2,17 +2,8 @@
     'use strict'
     app.component("homeevent", {
         bindings: {
-            editMode: "<",
             ngModel: "="
         },
-        templateUrl: 'js/components/home/homeevent.html',
-        controller: function() {
-            angular.extend(this, {
-                page: {
-                    name: 'homeevent',
-                    content: ''
-                }
-            })
-        }
+        templateUrl: 'js/components/home/homeevent.html'
     })
 })(angular.module('app.common'))

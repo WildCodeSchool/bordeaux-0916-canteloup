@@ -1,21 +1,23 @@
 'use strict'
-let fs = require('fs')
-let formidable = require('formidable')
-
 class Controller {
 
-    constructor(model, uploadFolder) {
+    constructor(model) {
         this.model = model
-        this.uploadFolder = uploadFolder || ''
     }
 
     findAll(req, res, next) {
-        this.model.find({}).sort({createdAt:"desc"}).exec((err, objects) => {
-            if (err)
-                next(err)
-            else
-                res.json(objects)
-        })
+        if (req.query.limit && isNaN(Number(req.query.limit))) {
+            next("Limit must be a number")
+        } else {
+            this.model.find({}).sort({
+                createdAt: "desc"
+            }).limit(Number(req.query.limit) || 0).exec((err, objects) => {
+                if (err)
+                    next(err)
+                else
+                    res.json(objects)
+            })
+        }
     }
 
     findById(req, res, next) {
@@ -56,31 +58,6 @@ class Controller {
         })
     }
 
-    upload(req, res, next) {
-        let form = new formidable.IncomingForm()
-
-        form.uploadDir = './public/img/' + this.uploadFolder
-        
-        if (!fs.existsSync(form.uploadDir)) fs.mkdirSync(form.uploadDir);
-
-        form
-            .on('file', (field, file) => {
-                fs.rename(file.path, form.uploadDir + "/" + file.name)
-                this.model.findById(req.params.id).exec((err, coworker) => {
-                    if (err){
-                        next(err)
-                    } else {
-                      coworker.image = "/img/" + this.uploadFolder + file.name
-                      coworker.save()
-                    }
-                })
-            })
-            .on('end', () => {
-                console.log('-> upload done')
-                res.sendStatus(200)
-            });
-        form.parse(req);
-    }
 }
 
 module.exports = Controller

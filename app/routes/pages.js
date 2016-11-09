@@ -19,4 +19,6 @@ module.exports = (app) => {
 
 	app.delete('/pages/:id', Auth.user.isAdministrator, (req, res, next) => { return pageCtrl.delete(req, res, next) })
 
+	app.post('/pages/upload/:id', Auth.user.isAdministrator, (req, res, next) => { return pageCtrl.upload(req, res, next) })
+
 }

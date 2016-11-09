@@ -1,5 +1,7 @@
 # bordeaux-0916-canteloup
 
+Fork from [tiny-mean-cms](https://github.com/jbehuet/tiny-mean-cms) developed by [J.BEHUET](https://github.com/jbehuet)
+
 ### Prerequisites
 * [NodeJS](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com/)

@@ -19,15 +19,43 @@
             <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> {{$ctrl.page.content.head2}} </h1>
             <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2"> {{$ctrl.page.content.para2}}</p>
         </div>
-       <carousel /> 
         <div class="row">
-            <img class="col-xs-6 window" src="/img/pictures/openspace1.jpg" />
-            <img class="col-xs-6 window" src="/img/pictures/openspace2.jpg" />
+            <img class="col-xs-6 window" ng-src="{{$ctrl.page.content.uploadImage1}}" />
+            <img class="col-xs-6 window" ng-src="{{$ctrl.page.content.uploadImage2}}" />
+        </div>
+        <div class="row" ng-if="$ctrl.editMode">
+          <div class="col-xs-6 window">
+            <div class="row">
+              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage1" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
+              <button class="btn-default col-xs-2 pull-right" ng-click="$ctrl.upload($ctrl.uploadImage1, 'uploadImage1')" style="padding:5px"><i class="fa fa-send"></i></button>
+            </div>
+          </div>
+          <div class="col-xs-6 window">
+            <div class="row">
+              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage2" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
+              <button class="btn-default col-xs-2 pull-right" ng-click="$ctrl.upload($ctrl.uploadImage2, 'uploadImage2')" style="padding:5px"><i class="fa fa-send"></i></button>
+            </div>
+          </div>
         </div>
 
         <div class="row">
-            <img class="col-xs-6 window" src="/img/pictures/meetingroom1.jpg" />
-            <img class="col-xs-6 window" src="/img/pictures/meetingroom2.jpg"  />
+            <img class="col-xs-6 window" ng-src="{{$ctrl.page.content.uploadImage3}}" />
+            <img class="col-xs-6 window" ng-src="{{$ctrl.page.content.uploadImage4}}"  />
+        </div>
+
+        <div class="row" ng-if="$ctrl.editMode">
+          <div class="col-xs-6 window">
+            <div class="row">
+              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage3" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
+              <button class="btn-default col-xs-2 pull-right" ng-click="$ctrl.upload($ctrl.uploadImage3, 'uploadImage3')" style="padding:5px"><i class="fa fa-send"></i></button>
+            </div>
+          </div>
+          <div class="col-xs-6 window">
+            <div class="row">
+              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage4" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
+              <button class="btn-default col-xs-2 pull-right" ng-click="$ctrl.upload($ctrl.uploadImage4, 'uploadImage4')" style="padding:5px"><i class="fa fa-send"></i></button>
+            </div>
+          </div>
         </div>
 
         <div>
