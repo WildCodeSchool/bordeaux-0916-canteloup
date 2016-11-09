@@ -33,9 +33,16 @@
                           this.coworkers.push(res.data)
 
                       this.selectedCoworker = res.data
-                      if (this.uploadImage){
-                          CoworkersService.upload(this.selectedCoworker, this.uploadImage).then((res) => {
-                            this.uploadImage = null
+                      if (this.uploadLogo || this.uploadBan ){
+                          let promises = []
+                          if (this.uploadLogo)
+                            promises.push(CoworkersService.upload(this.selectedCoworker, this.uploadLogo, 'logo'))
+                            if (this.uploadBan)
+                              promises.push(CoworkersService.upload(this.selectedCoworker, this.uploadBan, 'image'))
+
+                          Promise.all(promises).then(()=>{
+                            this.uploadLogo = null
+                            this.uploadBan = null
                             toastr.success(`${this.selectedCoworker.company} saved`)
                           }).catch((err) => {
                             toastr.warning(`${this.selectedCoworker.company} upload image error`)

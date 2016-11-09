@@ -46,7 +46,7 @@
               <text-angular class="col-md-12 form-group message" ng-model="$ctrl.selectedCoworker.resume" ng-required="true"></text-angular>
             </div>
             <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-12 form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
                           <i class="fa fa-link"></i>
@@ -54,13 +54,22 @@
                         <input type="text" class="form-control" placeholder="Website" ng-model="$ctrl.selectedCoworker.website">
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        Logo
+                      </span>
+                      <file name="image" class="form-control" ng-model="$ctrl.uploadLogo" accept="image/png,image/jpg,image/jpeg" />
+                    </div>
+                </div>
                 <div class="col-md-6 form-group">
                     <div class="input-group">
                         <span class="input-group-addon">
-                          <i class="fa fa-file-image-o"></i>
+                          Bannière
                         </span>
-                        <file name="image" class="form-control" ng-model="$ctrl.uploadImage" accept="image/png,image/jpg,image/jpeg" />
-                        <!-- <input type="file" class="form-control" placeholder="Logo" file-read="$ctrl.uploadImage"> -->
+                        <file name="image" class="form-control" ng-model="$ctrl.uploadBan" accept="image/png,image/jpg,image/jpeg" />
                     </div>
                 </div>
             </div>

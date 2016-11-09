@@ -32,13 +32,14 @@ class CoworkerContoller extends Controller {
 
         form
             .on('file', (field, file) => {
-                fs.rename(file.path, form.uploadDir + "/" + file.name)
+                if (!fs.existsSync(form.uploadDir + field)) fs.mkdirSync(form.uploadDir + field);
+                fs.rename(file.path, form.uploadDir + field + "/" + file.name)
                 this.model.findById(req.params.id).exec((err, coworker) => {
-                    if (err){
+                    if (err) {
                         next(err)
                     } else {
-                      coworker.image = "/img/coworkers/" + file.name
-                      coworker.save()
+                        coworker[field] = "/img/coworkers/" + field + "/" + file.name
+                        coworker.save()
                     }
                 })
             })

@@ -18,6 +18,9 @@ module.exports = mongoose.model('Coworker', new mongoose.Schema({
     image:{
       type: String
     },
+    logo:{
+      type: String
+    },
     website:{
       type: String,
       required: true

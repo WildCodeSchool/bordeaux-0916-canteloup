@@ -22,7 +22,7 @@
             return this.$http.delete('/api/coworkers/' + coworker._id)
         }
 
-        upload(coworker, file) {
+        upload(coworker, file, field) {
             return new Promise((resolve, reject) => {
                 let url = '/api/coworkers/upload/' + coworker._id
                 let xhr = new XMLHttpRequest()
@@ -38,7 +38,7 @@
                         }
                     }
                 };
-                fd.append("upload_file", file)
+                fd.append(field, file)
                 xhr.send(fd)
             })
         }
