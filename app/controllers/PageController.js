@@ -26,20 +26,20 @@ class PageController extends Controller {
     upload(req, res, next) {
         let form = new formidable.IncomingForm()
 
-        form.uploadDir = './public/img/pages/' + req.params.id
+        form.uploadDir = './public/img/pages/'
 
-        if (!fs.existsSync('./public/img/pages/')) fs.mkdirSync('./public/img/pages/');
         if (!fs.existsSync(form.uploadDir)) fs.mkdirSync(form.uploadDir);
 
         form
             .on('file', (field, file) => {
-                fs.rename(file.path, form.uploadDir + "/" + file.name)
                 this.model.findById(req.params.id).exec((err, page) => {
                     if (err){
                         next(err)
                     } else {
+                      if (!fs.existsSync('./public/img/pages/' + page.name)) fs.mkdirSync('./public/img/pages/' + page.name);
+                      fs.rename(file.path, form.uploadDir + "/" + page.name + "/" + file.name)
                       let content = JSON.parse(page.content)
-                      content[field] = 'img/pages/' + req.params.id + '/' + file.name
+                      content[field] = 'img/pages/' + page.name+ '/' + file.name
                       page.content = JSON.stringify(content)
                       page.save()
                     }
