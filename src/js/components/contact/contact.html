@@ -1,37 +1,40 @@
 <section>
 
-  <a id="title_page"></a>
-  <div ng-parallax pattern="'/img/pictures/visu-top-contact.png'" speed="10" reverse="false" class="headers">
-      <div class="container text-center">
-        <h1 class="intro-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"> {{$ctrl.page.content.title}}</h1>
-      </div>
-      <div class="container text-center">
-          <img class="img-responsive redline" src="/img/icons/line.png">
-          <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
-      </div>
-      <div class="icon-scroll container text-center">
-          <a ng-click="$ctrl.gotofirstPart()"><img class="icon_scroll" src="/img/icons/icon_scroll.png" /></a>
-      </div>
-  </div>
-  <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page"/>
+    <a id="title_page"></a>
+    <div ng-parallax pattern="'/img/pictures/visu-top-contact.png'" speed="10" reverse="false" class="headers">
+        <div class="container text-center">
+            <h1 class="intro-title" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.title"> {{$ctrl.page.content.title}}</h1>
+        </div>
+        <div class="container text-center">
+            <img class="img-responsive redline" src="/img/icons/line.png">
+            <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
+        </div>
+        <div class="icon-scroll container text-center">
+            <a ng-click="$ctrl.gotofirstPart()"><img class="icon_scroll" src="/img/icons/icon_scroll.png" /></a>
+        </div>
+    </div>
+    <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page" />
 
-    <a id="firstPart"></a><div class="container-fluid normal_bloc text-justify">
+    <a id="firstPart"></a>
+    <div class="container-fluid normal_bloc text-justify">
         <div class="row">
-          <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> {{$ctrl.page.content.head2}}</h1>
-          <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2">{{$ctrl.page.content.para2}}</p>
+            <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head2"> {{$ctrl.page.content.head2}}</h1>
+            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2">{{$ctrl.page.content.para2}}</p>
         </div>
         <div class="row contact_ac">
-            <img class="col-xs-2 col-md-offset-1 col-md-1" src="/img/icons/picto-adresse.png">
-            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3" class="col-xs-10 col-md-4"> {{$ctrl.page.content.para3}}</p>
+            <div style="line-height: 30px;">
+                <img class="col-xs-2 col-md-offset-1 col-md-1 picto" src="/img/icons/picto-adresse.png">
+                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3" class="col-xs-10 col-md-4"> {{$ctrl.page.content.para3}}</p>
+            </div>
             <div class="col-xs-12 col-md-offset-1 col-md-5 contact_ac_email">
-              <div class="row">
-                <img class="col-xs-6 col-md-offset-1 col-md-2 picto_adresse" src="/img/icons/picto-mail.png">
-                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4" class="col-xs-8 col-md-10"> {{$ctrl.page.content.para4}}</p>
-              </div>
-              <div class="row">
-                <img class="col-xs-6 col-md-offset-1 col-md-2 picto_adresse" src="/img/icons/picto-tel.png">
-                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para5" class="col-xs-8 col-md-10"> {{$ctrl.page.content.para5}}</p>
-              </div>
+                <div class="row" style="line-height: 34px;">
+                    <img class="col-xs-6 col-md-offset-1 col-md-2 picto" src="/img/icons/picto-mail.png">
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4" class="col-xs-8 col-md-10"> {{$ctrl.page.content.para4}}</p>
+                </div>
+                <div class="row" style="line-height: 34px;">
+                    <img class="col-xs-6 col-md-offset-1 col-md-2 picto" src="/img/icons/picto-tel.png">
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para5" class="col-xs-8 col-md-10"> {{$ctrl.page.content.para5}}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -39,18 +42,18 @@
 
 
 
-        <map/>
+    <map/>
 
 
 
     <div class="container-fluid normal_bloc text-justify">
         <div class="row">
-          <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2"> {{$ctrl.page.content.para2}}
-          </p>
+            <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para2"> {{$ctrl.page.content.para2}}
+            </p>
         </div>
     </div>
 
-    <div class="container large_bloc">
+    <div class="container normal_bloc">
         <contactform/>
     </div>
 

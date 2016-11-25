@@ -1,7 +1,7 @@
-<form name="contactForm" class="container-fluid" ng-submit="$ctrl.saveUser()" novalidate>
+<form name="contactForm" ng-submit="$ctrl.saveUser()" novalidate>
 
-    <div class="row row1 ">
-        <div class=" col-xs-offset-2 col-md-offset-2 col-xs-8 col-sm-8 col-m-4 col-lg-4">
+    <div class="row">
+        <div class="col-md-6 no-padding-left">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <i class="fa fa-user-plus"></i>
@@ -9,13 +9,12 @@
                 <input name="name" type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true" ng-minlength="2" ng-maxlength="15" />
             </div>
             <div ng-if="contactForm.name.$error" style="color:red" role="alert">
-                <div ng-if="contactForm.name.$error.required">You did not enter a field</div>
                 <div ng-if="contactForm.name.$error.minlength">Your field is too short</div>
                 <div ng-if="contactForm.name.$error.maxlength">Your field is too long</div>
             </div>
         </div>
 
-        <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-xs-8 col-sm-8 col-m-4 col-lg-4 col-lg-offset-0">
+        <div class="col-md-6">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <i class="fa fa-building-o"></i>
@@ -23,15 +22,14 @@
                 <input type="text" class="form-control" placeholder="Enterprise" name="enterprise" ng-model="$ctrl.contactInfo.company" ng-minlength="2" ng-maxlength="20" />
             </div>
             <div ng-if="contactForm.enterprise.$error" style="color:red" role="alert">
-                <div ng-if="contactForm.enterprise.$error.required">You did not enter a field</div>
                 <div ng-if="contactForm.enterprise.$error.minlength">Your field is too short</div>
                 <div ng-if="contactForm.enterprise.$error.maxlength">Your field is too long</div>
             </div>
         </div>
     </div>
 
-    <div class="row row 2">
-        <div class=" col-xs-offset-2 col-md-offset-2 col-xs-8 col-sm-8 col-m-4 col-lg-4">
+    <div class="row">
+        <div class="col-md-6 no-padding-left">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <i class="fa fa-at"></i>
@@ -39,12 +37,11 @@
                 <input type="email" class="form-control" placeholder="E-mail" name="email" ng-model="$ctrl.contactInfo.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
             </div>
             <div ng-if="contactForm.email.$error" style="color:red" role="alert">
-                <div ng-if="contactForm.email.$error.required">You did not enter a field</div>
                 <div ng-if="contactForm.email.$error.pattern">Bad format</div>
             </div>
         </div>
 
-        <div class=" col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-0 col-xs-8 col-sm-8 col-m-4 col-lg-4 ">
+        <div class="col-md-6">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <i class="fa fa-pencil"></i>
@@ -53,13 +50,15 @@
             </div>
         </div>
     </div>
-
-    <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-xs-8 textarea input-group">
-        <textarea class="form-control message" rows="6" placeholder="Leave a Message" ng-model="$ctrl.contactInfo.message" ng-required="true"></textarea>
+    <div class="row">
+        <div class="col-md-12 no-padding-left">
+            <textarea class="form-control message" rows="6" placeholder="Leave a Message" ng-model="$ctrl.contactInfo.message" ng-required="true"></textarea>
+        </div>
     </div>
-
-    <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default btn1" ng-disabled="contactForm.$invalid">
+    <div class="row">
+        <button type="submit" class="col-xs-offset-4 col-xs-4 btn-default btn1" ng-disabled="contactForm.$invalid">
         Envoyer
     </button>
+    </div>
 
 </form>
