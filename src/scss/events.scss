@@ -72,10 +72,9 @@
   .h2_ac, .h3_ac, .p_ac {padding: 0;}
 
   .p_ac {
-      max-height: 260px;
+      max-height: 275px;
       //white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin: 5% 5% 0 0;
   }
 }
