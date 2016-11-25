@@ -1,6 +1,6 @@
-<div class="row row_acanteloup">
+<div class="row row_acanteloup container_ac">
     <div class="col-xs-12 col-md-4 img_ac">
-        <div style="height: 518px;width: 100%;background: url({{$ctrl.ngModel.image}});background-size: cover;background-position: center;" class="col-xs-12 col-md-4 img_ac" alt="{{$ctrl.ngModel.title}}"></div>
+        <div style="height: 518px;width: 100%;background: url({{$ctrl.ngModel.image}});background-size: cover;background-position: center;margin-left: -15px;" class="col-xs-12 col-md-4 img_ac" alt="{{$ctrl.ngModel.title}}"></div>
     </div>
     <div class="col-xs-12 col-md-8">
         <div class="row">
@@ -11,5 +11,5 @@
         </div>
         <div class="p_ac p_ac_events" ng-bind-html="$ctrl.ngModel.description"></div>
     </div>
-    <a ui-sref="app.contact" class="col-xs-offset-3 col-xs-7 col-sm-offset-5 col-sm-2 btn-default btn_ac"> Nous contacter </a>
+    <a ui-sref="app.contact" class="col-xs-offset-3 col-xs-7 col-sm-offset-5 col-sm-2 btn-default"> Nous contacter </a>
 </div>
