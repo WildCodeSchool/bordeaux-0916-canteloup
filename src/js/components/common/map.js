@@ -32,34 +32,7 @@
                         .bindPopup(' L&rsquo;atelier Canteloup <br> 15 Place Canteloup, 33800 Bordeaux, France')
                         .openPopup();
 
-                    // control that shows state info on hover
-                    let info = L.control();
-
-                    info.onAdd = function(map) {
-                        this._div = L.DomUtil.create('div', 'info');
-                        this.update();
-                        return this._div;
-                    };
-
-                    info.update = function(props) {
-                        this._div.innerHTML = '<h4>Welcome to Bordeaux <br> from L&rsquo;atielier Canteloup</h4>' + (props ?
-                            '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>' :
-                            '');
-                    };
-
-                    info.addTo(map);
-
-                    // Disable dragging when user's cursor enters the element
-                    info.getContainer().addEventListener('mouseover', function() {
-                        map.dragging.disable();
-                    });
-
-                    // Re-enable dragging when user's cursor leaves the element
-                    info.getContainer().addEventListener('mouseout', function() {
-                        map.dragging.enable();
-                    });
-
-
+                    
                 }
             })
         }]
