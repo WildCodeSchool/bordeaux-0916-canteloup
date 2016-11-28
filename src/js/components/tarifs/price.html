@@ -1,15 +1,12 @@
 <div class="container-fluid price">
   <div class="row">
-    <h2 class="col-xs-12 pricingName" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.head1"> {{$ctrl.ngModel.price.head1}}</h2>
+    <h2 class="col-xs-12 pricingName">{{$ctrl.ngModel.title}}</h2>
   </div>
   <div class="row">
-    <h3 class="col-xs-12 pricingPrice"><span class="uppercase" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.price.span1"> {{$ctrl.ngModel.price.span1}}</span></h3>
+    <h3 class="col-xs-12 pricingPrice"><span class="uppercase">{{$ctrl.ngModel.price}}</span></h3>
   </div>
-  <div class="row formule-content"
-    <p class="col-xs-12 pricingInfo pricingInfo1" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.para1"> {{$ctrl.ngModel.para1}}</p>
-    <p class="col-xs-12 pricingInfo pricingInfo2" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.para2"> {{$ctrl.ngModel.para2}}</p>
-    <p class="col-xs-12 pricingInfo pricingInfo3" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.para3"> {{$ctrl.ngModel.para3}}</p>
-    <p class="col-xs-12 pricingInfo pricingInfo4" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.ngModel.para4"> {{$ctrl.ngModel.para4}}</p>
+  <div class="row formule-content">
+    <div class="col-xs-12 pricingInfo pricingInfo1" ng-bind-html="$ctrl.ngModel.details"></div>
   </div>
   <div>
     <div class="col-xs-offset-3 col-xs-6 line"> </div>

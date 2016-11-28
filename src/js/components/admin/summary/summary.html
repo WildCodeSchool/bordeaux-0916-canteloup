@@ -1,14 +1,16 @@
 <section>
-
+    <h1>Administration</h1>
     <div class="row">
-        <a class="btn" ng-click="$ctrl.disconnect()"><i class="fa fa-sign-out"></i> Déconnnexion</a>
+        <a class="col-xs-offset-1 col-xs-4 btn-default btn1" ui-sref="app.admin.users">Utilisateurs</a>
+        <a class="col-xs-offset-2 col-xs-4 btn-default btn1" ui-sref="app.admin.coworkers">Coworkers</a>
+    </div>
+    <div class="row">
+        <a class="col-xs-offset-1 col-xs-4 btn-default btn1" ui-sref="app.admin.events">Evenements</a>
+        <a class="col-xs-offset-2 col-xs-4 btn-default btn1" ui-sref="app.admin.tarifs">Tarifs</a>
     </div>
 
     <div class="row">
-      <a class="col-xs-offset-1 col-xs-3 btn-default btn1" ui-sref="app.admin.users">Utilisateurs</a>
-      <a class="col-xs-offset-1 col-xs-3 btn-default btn1" ui-sref="app.admin.coworkers">Coworkers</a>
-      <a class="col-xs-offset-1 col-xs-3 btn-default btn1" ui-sref="app.admin.events">Evenements</a>
+        <a class="col-xs-offset-1 col-xs-10 btn-default btn1" ng-click="$ctrl.disconnect()"><i class="fa fa-sign-out"></i> Déconnnexion</a>
     </div>
-
 
 </section>

@@ -6,14 +6,14 @@
           ngModel: "="
       },
         templateUrl: 'js/components/tarifs/tarifs.html',
-        controller: function($location, $anchorScroll, tarifsService) {
+        controller: function($location, $anchorScroll, TarifsService) {
           angular.extend(this, {
                 page: {
                     name: 'tarifs',
                     content: ''
                 },
                 $onInit() {
-                    tarifsService.getAll().then((res) => {
+                    TarifsService.getAll().then((res) => {
                         this.tarifs = res.data
                     })
                 },

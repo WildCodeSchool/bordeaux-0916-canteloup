@@ -23,10 +23,7 @@
 
     <div class="container-fluid medium2_bloc pricingTable">
         <div class="row">
-            <price edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.price1" class="col-xs-12 col-sm-6 col-md-3 priceForm" />
-            <!-- <price edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.price2" class="col-xs-12 col-sm-6 col-md-3 priceForm"/>
-          <price edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.price3" class="col-xs-12 col-sm-6 col-md-3 priceForm"/>
-          <price edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.price4" class="col-xs-12 col-sm-6 col-md-3 priceForm"/> -->
+            <price ng-repeat="tarif in $ctrl.tarifs" ng-model="tarif" class="col-xs-12 col-sm-6 col-md-3 priceForm" />
         </div>
     </div>
 
@@ -38,12 +35,14 @@
 
     <div class="container container_ac container_ac_price" ng-repeat="tarif in $ctrl.tarifs">
         <div class="row row_ac">
-            <img class="col-xs-12 col-md-4 img_ac " src="img/visu/visu-event1.png" />
+          <div class="col-xs-12 col-md-4 img_ac">
+              <div style="height: 518px;width: 100%;background: url({{tarif.image}});background-size: cover;background-position: center;" class="col-xs-12 col-md-4 img_ac" alt="{{event.title}}"></div>
+          </div>
             <div class="col-xs-12 col-md-8">
-                <h2 class="h2_ac"> {{tarif.officeTitle}} </h2>
-                <h3 class="h3_ac"> {{tarif.officeSubtitle}} </h3>
-                <p class="p_ac"> {{tarif.officeDescription}} </p>
-                <h2 class="h2_ac h2_ac_price"> {{tarif.officePrice}}</h2>
+                <h2 class="h2_ac">{{tarif.title}}</h2>
+                <h3 class="h3_ac">{{tarif.subtitle}}</h3>
+                <div class="p_ac" ng-bind-html="tarif.description"></div>
+                <h2 class="h2_ac h2_ac_price">{{tarif.price}}</h2>
             </div>
             <a ui-sref="app.contact" class="col-xs-offset-3 col-xs-7 col-sm-offset-5 col-sm-2 btn-default btn_ac"> Nous contacter </a>
         </div>

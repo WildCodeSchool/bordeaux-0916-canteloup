@@ -1,0 +1,80 @@
+<section>
+    <div class="row">
+        <button class="btn-default" ng-click="$ctrl.back()">Retour</button>
+        <button class="btn-default pull-right" ng-click="$ctrl.add()"><i class="fa fa-plus"></i> {{'COMMON_ADD' | translate}}</button>
+    </div>
+    <br />
+    <div class="row">
+        <table class="table col-md-12">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Subtitle</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr ng-repeat="tarif in $ctrl.tarifs">
+                <td>{{$index}}</td>
+                <td>{{tarif.title}}</td>
+                <td>{{tarif.subtitle}}</td>
+                <td>{{tarif.price}}</td>
+                <td class="text-right">
+                    <button class="btn btn-error" type="button" name="button" ng-click="$ctrl.delete($index, tarif)"><i class="fa fa-trash"></i></button>
+                    <button class="btn btn-warning" type="button" name="button" ng-click="$ctrl.edit(tarif)"><i class="fa fa-pencil"></i></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="row" ng-if="$ctrl.selectedTarif">
+        <h4 class="header">{{'COMMON_EDIT' | translate}}</h4>
+        <form id="formTarif" name="formTarif" class="form">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-header"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Title" ng-model="$ctrl.selectedTarif.title">
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-chevron-right"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Subtitle" ng-model="$ctrl.selectedTarif.subtitle">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <text-angular class="col-md-12 form-group message" ng-model="$ctrl.selectedTarif.details" ng-required="true"></text-angular>
+            </div>
+            <div class="row">
+              <text-angular class="col-md-12 form-group message" ng-model="$ctrl.selectedTarif.description" ng-required="true"></text-angular>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-money"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Subtitle" ng-model="$ctrl.selectedTarif.price">
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-file-image-o"></i>
+                        </span>
+                        <file name="image" class="form-control" ng-model="$ctrl.uploadImage" accept="image/png,image/jpg,image/jpeg" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-6 col-md-6 form-group frm-buttons">
+                    <button type="submit" class="col-sm-6 pull-right btn-default btn1" ng-click="$ctrl.save()" ng-disabled="formTarif.$pristine || formTarif.$invalid"><i class="fa fa-save"></i> {{'COMMON_SAVE' | translate}}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

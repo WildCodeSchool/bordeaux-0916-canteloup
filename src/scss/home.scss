@@ -125,7 +125,8 @@ p {
 }
 
 .btn-default:hover {
-    background-color: $transparent;
+    // background-color: $transparent;
+    background-color: $white;
     color: $primary;
     border: solid $primary 2px;
 }

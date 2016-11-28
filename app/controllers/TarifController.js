@@ -2,35 +2,17 @@
 let fs = require('fs')
 let formidable = require('formidable')
 let Controller = require('./Controller')
-const EVENT = require('../models/event')
+const TARIF = require('../models/tarif')
 
-class EventContoller extends Controller {
+class TarifContoller extends Controller {
 
     constructor() {
-        super(EVENT)
+        super(TARIF)
     }
-
-    findPublished(req, res, next) {
-        if (req.query.limit && isNaN(Number(req.query.limit))) {
-            next("Limit must be a number")
-        } else {
-            EVENT.find({
-                isDraft: false
-            }).sort({
-                createdAt: "desc"
-            }).limit(Number(req.query.limit) || 0 ).exec((err, objects) => {
-                if (err)
-                    next(err)
-                else
-                    res.json(objects)
-            })
-        }
-    }
-
     upload(req, res, next) {
         let form = new formidable.IncomingForm()
 
-        form.uploadDir = './public/img/events/'
+        form.uploadDir = './public/img/tarifs/'
 
         if (!fs.existsSync(form.uploadDir)) fs.mkdirSync(form.uploadDir);
 
@@ -42,7 +24,7 @@ class EventContoller extends Controller {
                     if (err) {
                         next(err)
                     } else {
-                        event[field] = "/img/events/" + file.name
+                        event[field] = "/img/tarifs/" + file.name
                         event.save()
                     }
                 })
@@ -53,7 +35,6 @@ class EventContoller extends Controller {
             });
         form.parse(req);
     }
-
 }
 
-module.exports = EventContoller
+module.exports = TarifContoller

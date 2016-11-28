@@ -101,5 +101,6 @@
     'app.admin.summary',
     'app.admin.coworkers',
     'app.admin.users',
-    'app.admin.events'
+    'app.admin.events',
+    'app.admin.tarifs'
 ]))

@@ -12,9 +12,10 @@ body {
     font-family: Lato;
     font-size: 16px;
 }
-a:hover{
-  text-decoration: none;
-  cursor: pointer;
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
 }
 /* form */
 .form {
@@ -43,13 +44,14 @@ a:hover{
 
 section > div.container {
     margin-bottom: 60px;
+    margin-top: 10px;
 }
 /* button */
- .btn,
- .input-group-addon,
- input {
-     border-radius: 20px;
- }
+.btn,
+.input-group-addon,
+input {
+    border-radius: 20px;
+}
 
 .pagination > li > a {
     margin-right: 5px;
@@ -98,7 +100,6 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
 .css-label {
     background-image: url('../img/checkbox.png');
 }
-
 /* editor */
 .editable {
     min-height: 25px;
@@ -106,6 +107,6 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     color: $white;
 }
 
-.no-padding-left{
-  padding-left: 0px;
+.no-padding-left {
+    padding-left: 0;
 }

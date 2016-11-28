@@ -46,7 +46,7 @@
                         }
                     }
                 };
-                fd.append("upload_file", file)
+                fd.append("image", file)
                 xhr.send(fd)
             })
         }
