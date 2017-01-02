@@ -45,18 +45,22 @@
 
     .formule-content{
       margin : 0;
-      max-height : 200px;
+      min-height : 200px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
     .pricingInfo {
-      font-size: 1em;
+      font-size: 0.8em;
       color : $black;
       text-align: center;
       //line-height: 1em;
       float: none;
+    }
+
+    .pricingInfo ul{
+      list-style-type: none;
     }
 
     .line {

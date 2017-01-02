@@ -1,4 +1,16 @@
 @import 'colors';
+@font-face {
+    font-family: Lato Light;
+    src: url("../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: Lato Black;
+    src: url("../fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Reg.ttf");
+}
 
 html {
     position: relative;
@@ -101,6 +113,10 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     background-image: url('../img/checkbox.png');
 }
 /* editor */
+.ite-bold {
+    font-family: Lato Black;
+}
+
 .editable {
     min-height: 25px;
     background: $text-edit;

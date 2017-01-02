@@ -24,16 +24,22 @@
         <div class="row contact_ac">
             <div style="line-height: 30px;">
                 <img class="col-xs-2 col-md-offset-1 col-md-1 picto" src="/img/icons/picto-adresse.png">
-                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3" class="col-xs-10 col-md-4"> {{$ctrl.page.content.para3}}</p>
+                <div class="col-xs-10 col-md-4">
+                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para3"> {{$ctrl.page.content.para3}}</p>
+                </div>
             </div>
             <div class="col-xs-12 col-md-offset-1 col-md-5 contact_ac_email">
                 <div class="row" style="line-height: 34px;">
                     <img class="col-xs-6 col-md-offset-1 col-md-2 picto" src="/img/icons/picto-mail.png">
-                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4" class="col-xs-8 col-md-10"> {{$ctrl.page.content.para4}}</p>
+                    <div class="col-xs-8 col-md-10">
+                        <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para4"> {{$ctrl.page.content.para4}}</p>
+                    </div>
                 </div>
                 <div class="row" style="line-height: 34px;">
                     <img class="col-xs-6 col-md-offset-1 col-md-2 picto" src="/img/icons/picto-tel.png">
-                    <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para5" class="col-xs-8 col-md-10"> {{$ctrl.page.content.para5}}</p>
+                    <div class="col-xs-8 col-md-10">
+                        <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para5"> {{$ctrl.page.content.para5}}</p>
+                    </div>
                 </div>
             </div>
         </div>
