@@ -1,17 +1,18 @@
+<adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page" />
 <section>
     <a id="title_page"></a>
-    <div ng-parallax pattern="'/img/pictures/visu-top-home.png'" speed="10" reverse="false" class="intro">
-        <videos autoplay />
-        <img src="/img/icons/logo-home-top.png" class="logo-titre center-block img-responsive">
-        <div class="container text-center">
-            <img class="img-responsive redline" src="/img/icons/line.png">
-            <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
+    <div ng-parallax pattern="'/img/pictures/visu-top-home.png'" speed="10" reverse="false" class="intro text-center">
+        <videos autoplay></videos>
+        <img src="/img/icons/logo-home-top.png" class="logo-titre img-responsive">
+        <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
+        <div>
+            <img src="/img/icons/line.png">
         </div>
-        <div class="icon-scroll container text-center">
-            <a ng-click="$ctrl.gotofirstPart()"><img class="icon_scroll" src="/img/icons/icon_scroll.png" /></a>
+        <div class="icon-scroll">
+            <a ng-click="$ctrl.gotofirstPart()" class="icon_scroll"></a>
         </div>
     </div>
-    <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page" />
+
 
     <a id="firstPart"></a>
     <div class="container normal_bloc">
@@ -34,24 +35,24 @@
         </div>
 
         <div class="row" ng-if="$ctrl.editMode">
-          <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
-            <div class="row">
-              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage1" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
-              <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage1, 'uploadImage1')" style="padding:5px"><i class="fa fa-send"></i></button>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
+                <div class="row">
+                    <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage1" accept="image/png,image/jpg,image/jpeg" style="width: inherit;" />
+                    <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage1, 'uploadImage1')" style="padding:5px"><i class="fa fa-send"></i></button>
+                </div>
             </div>
-          </div>
-          <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
-            <div class="row">
-              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage2" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
-              <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage2, 'uploadImage2')" style="padding:5px"><i class="fa fa-send"></i></button>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
+                <div class="row">
+                    <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage2" accept="image/png,image/jpg,image/jpeg" style="width: inherit;" />
+                    <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage2, 'uploadImage2')" style="padding:5px"><i class="fa fa-send"></i></button>
+                </div>
             </div>
-          </div>
-          <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
-            <div class="row">
-              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage3" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
-              <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage3, 'uploadImage3')" style="padding:5px"><i class="fa fa-send"></i></button>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
+                <div class="row">
+                    <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage3" accept="image/png,image/jpg,image/jpeg" style="width: inherit;" />
+                    <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage3, 'uploadImage3')" style="padding:5px"><i class="fa fa-send"></i></button>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="row">
@@ -61,24 +62,24 @@
         </div>
 
         <div class="row" ng-if="$ctrl.editMode">
-          <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
-            <div class="row">
-              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage4" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
-              <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage4, 'uploadImage4')" style="padding:5px"><i class="fa fa-send"></i></button>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
+                <div class="row">
+                    <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage4" accept="image/png,image/jpg,image/jpeg" style="width: inherit;" />
+                    <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage4, 'uploadImage4')" style="padding:5px"><i class="fa fa-send"></i></button>
+                </div>
             </div>
-          </div>
-          <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
-            <div class="row">
-              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage5" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
-              <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage5, 'uploadImage5')" style="padding:5px"><i class="fa fa-send"></i></button>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
+                <div class="row">
+                    <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage5" accept="image/png,image/jpg,image/jpeg" style="width: inherit;" />
+                    <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage5, 'uploadImage5')" style="padding:5px"><i class="fa fa-send"></i></button>
+                </div>
             </div>
-          </div>
-          <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
-            <div class="row">
-              <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage6" accept="image/png,image/jpg,image/jpeg" style="width: inherit;"/>
-              <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage6, 'uploadImage6')" style="padding:5px"><i class="fa fa-send"></i></button>
+            <div class="hidden-xs hidden-sm col-md-4 col-lg-4 window">
+                <div class="row">
+                    <file name="image" class="col-xs-10 form-control" ng-model="$ctrl.uploadImage6" accept="image/png,image/jpg,image/jpeg" style="width: inherit;" />
+                    <button class="btn-default col-xs-2" ng-click="$ctrl.upload($ctrl.uploadImage6, 'uploadImage6')" style="padding:5px"><i class="fa fa-send"></i></button>
+                </div>
             </div>
-          </div>
         </div>
 
     </div>
@@ -100,31 +101,31 @@
                 <h1 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.head4" class="h1_v2"> {{$ctrl.page.content.head4}}</h1>
 
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}"  ng-repeat="coworker in $ctrl.coworkers | limitTo:3">
+                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}" ng-repeat="coworker in $ctrl.coworkers | limitTo:3">
                         <img ng-src="{{coworker.logo}}" alt="coworker.company" class="logo_company center-block" />
                     </div>
                 </div>
 
                 <div class="row" ng-if="$ctrl.coworkers.length >= 4">
-                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}"  ng-repeat="coworker in $ctrl.coworkers | limitTo:3:2">
+                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}" ng-repeat="coworker in $ctrl.coworkers | limitTo:3:2">
                         <img ng-src="{{coworker.logo}}" alt="coworker.company" class="logo_company center-block" />
                     </div>
                 </div>
 
                 <div class="row" ng-if="$ctrl.coworkers.length >= 6">
-                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}"  ng-repeat="coworker in $ctrl.coworkers | limitTo:3:5">
+                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}" ng-repeat="coworker in $ctrl.coworkers | limitTo:3:5">
                         <img ng-src="{{coworker.logo}}" alt="coworker.company" class="logo_company center-block" />
                     </div>
                 </div>
 
                 <div class="row" ng-if="$ctrl.coworkers.length >= 9">
-                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}"  ng-repeat="coworker in $ctrl.coworkers | limitTo:3:8">
+                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}" ng-repeat="coworker in $ctrl.coworkers | limitTo:3:8">
                         <img ng-src="{{coworker.logo}}" alt="coworker.company" class="logo_company center-block" />
                     </div>
                 </div>
 
                 <div class="row" ng-if="$ctrl.coworkers.length >= 12">
-                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}"  ng-repeat="coworker in $ctrl.coworkers | limitTo:3:10">
+                    <div class="col-xs-12 col-sm-4 col-lg-2" ng-class="{'col-lg-offset-2':$first, 'col-lg-offset-1':!$first}" ng-repeat="coworker in $ctrl.coworkers | limitTo:3:10">
                         <img ng-src="{{coworker.logo}}" alt="coworker.company" class="logo_company center-block" />
                     </div>
                 </div>
@@ -159,7 +160,7 @@
     </div>
 
     <div class="icon-scroll container text-right">
-        <a ng-click="$ctrl.gototitle()"><img class="icon_scroll icon_scroll_top" src="/img/icons/icon_scroll_top.png" /></a>
+        <a class="icon_scroll_top" ng-click="$ctrl.gototitle()"></a>
     </div>
 
 </section>

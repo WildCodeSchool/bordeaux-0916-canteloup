@@ -10,7 +10,7 @@
             angular.extend(this, {
                 $onInit() {
                 },
-                saveUser() {
+                sendEmail() {
                   console.log('SEND !!', this.contactInfo);
                 }
             })

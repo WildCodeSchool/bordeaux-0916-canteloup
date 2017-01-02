@@ -64,13 +64,33 @@ p {
     margin: 5% 0;
 }
 
+.icon-scroll {
+    height: 60px;
+}
+
 .icon_scroll {
-    margin-bottom: 40px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+    margin-left:-26px;
+    background-image: url('/img/icons/icon_scroll.png');
+}
+
+.icon_scroll:hover {
+    background-image: url('/img/icons/icon_scroll_hover.png');
 }
 
 .icon_scroll_top {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    bottom: 250px;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background-image: url('/img/icons/icon_scroll_top.png');
+}
+
+.icon_scroll_top:hover {
+    background-image: url('/img/icons/icon_scroll_top_hover.png');
 }
 /* Home content */
 .window {
@@ -112,7 +132,7 @@ p {
 }
 /* bouttons */
 .btn-default {
-    font-family: Lato Black;
+    font-family: Lato;
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
@@ -125,8 +145,8 @@ p {
 }
 
 .btn-default:hover {
-    // background-color: $transparent;
-    background-color: $white;
+     background-color: $transparent;
+    //background-color: $white;
     color: $primary;
     border: solid $primary 2px;
 }

@@ -53,10 +53,13 @@
 
     .pricingInfo {
       font-size: 0.8em;
-      color : $black;
+      color : #5B5F66;
       text-align: center;
       //line-height: 1em;
       float: none;
+    }
+    .pricingInfo p{
+      text-align: center;
     }
 
     .pricingInfo ul{

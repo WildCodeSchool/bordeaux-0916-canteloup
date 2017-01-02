@@ -8,9 +8,9 @@
         <div class="container text-center">
             <img class="img-responsive redline" src="/img/icons/line.png">
             <p class="intro-subtitle" inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable inline-text-editor' : $ctrl.editMode}" ng-model="$ctrl.page.content.para1">{{$ctrl.page.content.para1}}</p>
-        </div>
-        <div class="icon-scroll container text-center">
-            <a ng-click="$ctrl.gotofirstPart()"><img class="icon_scroll" src="/img/icons/icon_scroll.png" /></a>
+            <div class="icon-scroll container text-center">
+                <a class="icon_scroll" ng-click="$ctrl.gotofirstPart()"></a>
+            </div>
         </div>
     </div>
     <adminnav edit-mode="$ctrl.editMode" ng-model="$ctrl.page" />
@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="h2_ac">{{event.title}}</h2>
-                        <h3 class="h3_ac">{{event.date | date: 'dd MM YYYY'}}</h3>
+                        <h3 class="h3_ac">{{event.date | date: 'dd/MM/yyyy'}}</h3>
                     </div>
                 </div>
                 <div class="p_ac p_ac_events" ng-bind-html="event.description"></div>
@@ -47,7 +47,7 @@
     </div>
 
     <div class="icon-scroll container text-right">
-        <a ng-click="$ctrl.gototitle()"><img class="icon_scroll icon_scroll_top" src="/img/icons/icon_scroll_top.png" /></a>
+        <a ng-click="$ctrl.gototitle()" class="icon_scroll_top"></a>
     </div>
 
 </section>

@@ -1,4 +1,4 @@
-<form name="contactForm" ng-submit="$ctrl.saveUser()" novalidate>
+<form name="contactForm" ng-submit="$ctrl.sendEmail()" novalidate>
 
     <div class="row">
         <div class="col-md-6 no-padding-left">
@@ -6,7 +6,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-user-plus"></i>
                 </span>
-                <input name="name" type="text" class="form-control" placeholder="Name" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true" ng-minlength="2" ng-maxlength="15" />
+                <input name="name" type="text" class="form-control" placeholder="Nom" id="usr" ng-model="$ctrl.contactInfo.name" ng-required="true" ng-minlength="2" ng-maxlength="30" />
             </div>
             <div ng-if="contactForm.name.$error" style="color:red" role="alert">
                 <div ng-if="contactForm.name.$error.minlength">Your field is too short</div>
@@ -19,7 +19,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-building-o"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Enterprise" name="enterprise" ng-model="$ctrl.contactInfo.company" ng-minlength="2" ng-maxlength="20" />
+                <input type="text" class="form-control" placeholder="Entreprise" name="enterprise" ng-model="$ctrl.contactInfo.company" ng-minlength="2" ng-maxlength="50" />
             </div>
             <div ng-if="contactForm.enterprise.$error" style="color:red" role="alert">
                 <div ng-if="contactForm.enterprise.$error.minlength">Your field is too short</div>
@@ -34,7 +34,7 @@
                 <span class="input-group-addon">
                     <i class="fa fa-at"></i>
                 </span>
-                <input type="email" class="form-control" placeholder="E-mail" name="email" ng-model="$ctrl.contactInfo.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+                <input type="email" class="form-control" placeholder="Email" name="email" ng-model="$ctrl.contactInfo.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
             </div>
             <div ng-if="contactForm.email.$error" style="color:red" role="alert">
                 <div ng-if="contactForm.email.$error.pattern">Bad format</div>
@@ -46,13 +46,13 @@
                 <span class="input-group-addon">
                     <i class="fa fa-pencil"></i>
                 </span>
-                <input type="text" class="form-control" placeholder="Suject" id="" ng-model="$ctrl.contactInfo.subject" ng-required="true" />
+                <input type="text" class="form-control" placeholder="Sujet" id="" ng-model="$ctrl.contactInfo.subject" ng-required="true" />
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 no-padding-left">
-            <textarea class="form-control message" rows="6" placeholder="Leave a Message" ng-model="$ctrl.contactInfo.message" ng-required="true"></textarea>
+            <textarea class="form-control message" rows="6" placeholder="Votre message" ng-model="$ctrl.contactInfo.message" ng-required="true"></textarea>
         </div>
     </div>
     <div class="row">
